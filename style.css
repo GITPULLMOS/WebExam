@@ -36,7 +36,7 @@ img {
 
 footer{
     background-color: rgb(255,213,0);
-    height: 550px;
+    height: 650px;
     margin-top: 100%;
 }
 
@@ -72,7 +72,6 @@ footer{
     display: flex;
     justify-content: space-around;
     margin: 5%;
-    margin-left: -4%;
 }
 
 h2{
@@ -91,7 +90,7 @@ ul{
 }
 
 li{
-    margin-top: 10px;
+    margin-top: 13px;
 }
 
 li:hover{
@@ -99,4 +98,9 @@ li:hover{
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
     cursor: pointer;
+}
+
+#logo{
+    width: 5%;
+    margin-left: 0%;
 }
