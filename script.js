@@ -15,3 +15,15 @@ function showUnderMenu() {
         displayUnderMenu = false
     }
 }
+
+function showCover() {
+    var Cover = document.getElementById("under-Nav-Cover")
+
+    if (!displayUnderMenu) {
+        Cover.style.display = "flex"
+        displayUnderMenu = true
+    } else {
+        Cover.style.display = "none"
+        displayUnderMenu = false
+    }
+}
