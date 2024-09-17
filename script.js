@@ -1,7 +1,17 @@
 
 
+
+
+let displayUnderMenu = false
+
 function showUnderMenu() {
     var underMenu = document.getElementById("under-Nav")
 
-    underMenu.style.display = "flex"
+    if (!displayUnderMenu) {
+        underMenu.style.display = "flex"
+        displayUnderMenu = true
+    } else {
+        underMenu.style.display = "none"
+        displayUnderMenu = false
+    }
 }
