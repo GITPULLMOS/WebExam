@@ -1,16 +1,17 @@
 
 
-let displayUnderMenu = true
 
+
+let displayUnderMenu = false
 
 function showUnderMenu() {
     var underMenu = document.getElementById("under-Nav")
 
-    if (displayUnderMenu) {
+    if (!displayUnderMenu) {
         underMenu.style.display = "flex"
-        displayUnderMenu = false
+        displayUnderMenu = true
     } else {
         underMenu.style.display = "none"
-        displayUnderMenu = true
+        displayUnderMenu = false
     }
 }
