@@ -10,7 +10,34 @@ nav {
 }
 
 footer{
-    background-color: yellow;
+    background-color: rgb(255,213,0);
     height: 250px;
     margin-top: 100%;
+}
+
+#footertop{
+    border-bottom: 1px solid black;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#footeroverskrift{
+    font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 35px; 
+    width: 50%;
+    margin-top: 3%;
+}
+
+#footerknapp{
+    background-color: black;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    width: 19%;
+    padding: 20px;
+    text-align: center;
+    font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
+    margin-top: 4%;
+    height: 20px;
 }
