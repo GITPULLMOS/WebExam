@@ -10,15 +10,28 @@ nav {
     height: 80px;
     display: flex;
     align-items: center;
-    gap: 10px;
     justify-content: flex-end;
+
+    position: relative;
+    z-index: 3;
 }
 
-img {
-    width: 70px;
-    margin-left: -85vw;
+nav img {
+    margin-right: 65vw;
+    width: 83px;
 }
 
+#Right-Navigation-Content {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-right: 100px;
+}
+
+nav p {
+    font-weight: bold;
+    cursor: pointer;
+}
 
 #under-Nav {
     width: 60%;
@@ -32,7 +45,25 @@ img {
     justify-content: center;
     align-items: center;
     gap: 10vw;
+
+    position: relative;
+    z-index: 2;
 }
+
+#under-Nav p {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#under-Nav-Cover {
+    display: block;
+    position: relative;
+    z-index: 1;
+    background-color: black;
+}
+
+
+
 
 footer{
     background-color: rgb(255,213,0);
