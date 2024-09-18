@@ -49,8 +49,8 @@ nav p {
 #bottomNav {
     width: 60%;
     height: 80px;
-    background-color: rgb(213, 178, 1);
-
+    background-color: rgb(208, 174, 6);
+    border-top-style: solid;
     display: none;
     flex-direction: row;
     justify-content: space-around;
