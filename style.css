@@ -107,26 +107,24 @@ footer{
     height: 150px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 #footeroverskrift{
     font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
     font-size: 35px; 
     width: 50%;
-    margin-top: 3%;
 }
 
 #footerknapp{
     background-color: black;
-    font-size: 17px;
     font-weight: bold;
     color: white;
-    width: 19%;
-    padding: 20px;
+    width: 20vw;
+    padding: 1.5vw;
     text-align: center;
     font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
-    margin-top: 4%;
-    height: 20px;
+    height: 2vh;
     cursor: pointer;
 }
 
