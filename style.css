@@ -4,6 +4,8 @@ body {
 }
 
 
+/* Start of the Navigation bar */
+
 #nav {
     width: 100vw;
     background-color: rgb(255,213,0);
@@ -27,7 +29,7 @@ nav a {
 }
 
 #OsloMetLogo {
-    width: 83px;
+    width: 7vw;
 }
 
 #Right-Navigation-Content {
@@ -77,9 +79,20 @@ nav p {
     z-index: 1;
 }
 
+/* End of Navigation Bar */
 
+/* Start of the main content */
+main {
+    display: flex;
+    justify-content: center;
+}
 
+main h1 {
+    margin-top: 30vh;
+}
+/* End of the main content */
 
+/* Start of the footer */
 footer{
     background-color: rgb(255,213,0);
     height: 550px;
@@ -158,3 +171,5 @@ a {
     color: inherit;
     text-decoration: inherit;
   }
+
+  /* End of footer */
