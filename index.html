@@ -8,24 +8,24 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <nav>
-        <a href="index.html"><img src="OsloMet-logo.png" alt="Oslomet-Logo"></a>
-
-        <div id="Right-Navigation-Content">
-            <p>Søk</p>
-            <p onclick="showUnderMenu()">Menu</p>
-        </div>
-    </nav>
-
-    <!-- The navigation bar that pops up under the main menu  -->
-    <div id="under-Nav">
-        <p>Accessibility</p>
-        <p>GitHub</p>
-        <p>Activity</p>
-    </div>
-    
-    <div id="under-Nav-Cover" onclick="showCover()"></div>
-
+    <header>
+        <nav id="nav">
+            <div id="topNav">
+                <a href="index.html"><img src="OsloMet-logo.png" alt="Oslomet-Logo" id="OsloMetLogo"></a>
+                
+                <div id="Right-Navigation-Content">
+                    <p>Søk <img src="search-Icon.webp" alt="" style="width: 20px;"></p>
+                    <p onclick="showUnderMenu()">Menu<img id="menu-Icon" src="menuIcon.webp" alt="" style="width: 20px;"></p>
+                </div>
+            </div>
+            <div id="bottomNav">
+                <p>Accessibility</p>
+                <p>GitHub</p>
+                <p>Activity</p>
+            </div>    
+        </nav>
+        <!-- The navigation bar that pops up under the main menu  -->
+    </header>
     <main>
 
     </main>
