@@ -12,9 +12,9 @@ body {
     justify-content: center;
     align-items: center;
     position: fixed;
-    z-index: 3;
     top: 0;
     transition: 0.3s;
+    z-index: 3;
 }
 
 #topNav {
@@ -47,24 +47,37 @@ nav p {
 #bottomNav {
     width: 60%;
     height: 80px;
-    margin-top: 24vh;
     background-color: rgb(235, 196, 3);
 
     display: none;
-    margin-left: auto;
-    margin-right: auto;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    position: absolute;
+    position: fixed;
+    top: 12vh;
+    z-index: 2;
 
     transition: 0.5s;
 }
 
-#under-Nav p {
+#bottomNav p {
     cursor: pointer;
     font-weight: bold;
 }
+
+#Cover {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.5;
+
+    position: relative;
+    z-index: 1;
+}
+
+
+
 
 footer{
     background-color: rgb(255,213,0);
@@ -72,6 +85,7 @@ footer{
     margin-top: 100%;
     position: relative;
     z-index: 0;
+    
 }
 
 #footertop{
