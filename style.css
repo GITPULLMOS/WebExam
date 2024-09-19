@@ -109,8 +109,13 @@ main h2 {
     padding: 1%;
     padding-right: 2%;
     margin-left: 25%;
-    font-size: 25px;
+    font-size: 1.5em;
     font-weight: bold;
+    transition: background-color 0.4s ease-in-out;
+}
+
+#studenthistorier:hover{
+    background-color: rgb(201, 168, 3);
 }
 
 #studenthistorierknapp{
@@ -163,7 +168,7 @@ footer{
 }
 
 h2{
-    font-size: 15px;
+    font-size: 1em;
 }
 
 ul{
@@ -172,7 +177,7 @@ ul{
 
 #liste{
     font-weight: bold;
-    font-size: 13px;
+    font-size: 0.8em;
     margin-left: 40%;
     width: 100%;
     display: flex;
