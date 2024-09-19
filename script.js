@@ -9,12 +9,12 @@ function showUnderMenu() {
     if (!displayUnderMenu) {
         underMenu.style.display = "flex"
         Cover.style.display = "flex"
-        MenuIcon.src = "kryss.webp"
+        MenuIcon.src = "Images/kryss.webp"
         displayUnderMenu = true
     } else {
         underMenu.style.display = "none"
         Cover.style.display = "none"
-        MenuIcon.src = "menuIcon.webp"
+        MenuIcon.src = "Images/menuIcon.webp"
         displayUnderMenu = false
     }
 }
@@ -26,7 +26,7 @@ function closeUnderMenu() {
 
     Cover.style.display = "none"
     underMenu.style.display = "none"
-    MenuIcon.src = "menuIcon.webp"
+    MenuIcon.src = "Images/menuIcon.webp"
 }
 
 var prevScrollpos = window.scrollY
@@ -36,13 +36,13 @@ window.onscroll = function() {
         document.getElementById("nav").style.top = "0"
         document.getElementById("bottomNav").style.display = "none"
         document.getElementById("Cover").style.display = "none"
-        document.getElementById("menu-Icon").src = "menuIcon.webp"
+        document.getElementById("menu-Icon").src = "Images/menuIcon.webp"
         displayUnderMenu = false
     } else {
         document.getElementById("nav").style.top = "-20vh"
         document.getElementById("bottomNav").style.display = "none"
         document.getElementById("Cover").style.display = "none"
-        document.getElementById("menu-Icon").src = "menuIcon.webp"
+        document.getElementById("menu-Icon").src = "Images/menuIcon.webp"
         displayUnderMenu = false
     }
     prevScrollpos = currentScrollpos
