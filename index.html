@@ -8,34 +8,35 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <nav>
-        <a href="index.html"><img src="OsloMet-logo.png" alt="Oslomet-Logo"></a>
-
-        <div id="Right-Navigation-Content">
-            <p>Søk</p>
-            <p onclick="showUnderMenu()">Menu</p>
-        </div>
-    </nav>
-
-    <!-- The navigation bar that pops up under the main menu  -->
-    <div id="under-Nav">
-        <p>Accessibility</p>
-        <p>GitHub</p>
-        <p>Activity</p>
-    </div>
-    
-    <div id="under-Nav-Cover" onclick="showCover()"></div>
-
+    <header>
+        <nav id="nav">
+            <div id="topNav">
+                <a href="index.html"><img src="OsloMet-logo.png" alt="Oslomet-Logo" id="OsloMetLogo"></a>
+                
+                <div id="Right-Navigation-Content">
+                    <p>Søk <img src="search-Icon.webp" alt="" style="width: 20px;"></p>
+                    <p onclick="showUnderMenu()">Menu<img id="menu-Icon" src="menuIcon.webp" alt="" style="width: 20px;"></p>
+                </div>
+            </div>
+            <!-- The navigation bar that pops up under the main menu  -->
+            <div id="bottomNav">
+                <p>Accessibility</p>
+                <p>GitHub</p>
+                <p>Activity</p>
+            </div>
+        </nav>
+        <div id="Cover" onclick="closeUnderMenu()"></div>
+    </header>
     <main>
-    <div id="studenthistorier">
-        <ul>
-        <li>Flere Studenthistorier</li>
-        <li>></li>
-        </ul>
-    </div>
+        <h1>Matematisk modellering og datavitenskap – ingeniør</h1>
     </main>
     <footer>
-        <div id="footertop"><h1 id="footeroverskrift">Hold deg oppdatert på hva som skjer på Oslomet.</h1><div id="footerknapp"><a href ="https://www.oslomet.no/nyhetsbrev">Abonner på vårt nyhetsbrev!</a></div></div>
+        <div id="footertop">
+            <h1 id="footeroverskrift">Hold deg oppdatert på hva som skjer på Oslomet.</h1>
+            <div id="footerknapp">
+                <a href ="https://www.oslomet.no/nyhetsbrev">Abonner på vårt nyhetsbrev!</a>
+            </div>
+        </div>
         <div id="footerinfo">
             <div>
                 <ul>
