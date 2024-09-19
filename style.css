@@ -51,7 +51,7 @@ nav p {
 
 #bottomNav {
     width: 60%;
-    height: 80px;
+    height: 12vh;
     background-color: rgb(255,213,0);
     display: none;
     flex-direction: row;
@@ -94,12 +94,12 @@ main {
 }
 
 main h1 {
-    font-size: 8vh;
+    font-size: 3em;
 }
 
 main h2 {
     margin-top: -3vh;
-    font-size: 4vh;
+    font-size: 2em;
     font-weight: lighter;
 }
 
@@ -178,7 +178,7 @@ ul{
     flex-direction: column;
 }
 
-.lenkeliste{
+#liste p{
     margin-top: 0px;
     display: inline-block;
 }
@@ -190,7 +190,7 @@ ul{
     cursor: pointer;
 }
 
-.medieliste{
+#medier li{
     margin-top: 20px;
 }
 
