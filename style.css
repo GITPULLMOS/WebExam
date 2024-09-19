@@ -63,7 +63,30 @@ nav p {
 }
 
 
+#studenthistorier{
+    display: flex;
+    justify-content: center;
+    font-size: 27px;
+    font-weight: bold;
+    width: 40%;
+    padding-right: 2%;
+    background-color: rgb(255,213,0);
+    text-align: cen;
+    margin-top: 5%;
+    margin-left: 28%;
+    transition: background-color 0.4s ease-in-out;
+}
 
+#studenthistorier ul {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#studenthistorier:hover{
+    background-color: rgb(209, 174, 1);
+}
 
 footer{
     background-color: rgb(255,213,0);
@@ -101,7 +124,7 @@ footer{
 
 #footerinfo{
     display: flex;
-    justify-content: space-around;
+    gap: 10vw;
     margin: 5%;
 }
 
@@ -116,19 +139,26 @@ ul{
 #liste{
     font-weight: bold;
     font-size: 13px;
-    margin-left: 20%;
+    margin-left: 40%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-li{
-    margin-top: 10px;
+.lenkeliste{
+    margin-top: 0px;
+    display: inline-block;
 }
 
-li:hover{
+.lenkeliste:hover{
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
     cursor: pointer;
+}
+
+.medieliste{
+    margin-top: 20px;
 }
 
 #logo{
