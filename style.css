@@ -16,12 +16,15 @@ body {
     position: fixed;
     top: 0;
     transition: 0.3s;
-    z-index: 3;
+    z-index: 5;
+    border-bottom-style: solid;
 }
 
 #topNav {
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 nav a {
@@ -49,14 +52,13 @@ nav p {
 #bottomNav {
     width: 60%;
     height: 80px;
-    background-color: rgb(208, 174, 6);
-    border-top-style: solid;
+    background-color: rgb(255,213,0);
     display: none;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    top: 12vh;
+    top: 12.3vh;
     z-index: 2;
 
     transition: 0.5s;
@@ -83,12 +85,22 @@ nav p {
 
 /* Start of the main content */
 main {
+    margin-top: 30vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
 main h1 {
-    margin-top: 30vh;
+    font-size: 8vh;
+}
+
+main h2 {
+    margin-top: -3vh;
+    font-size: 4vh;
+    font-weight: lighter;
 }
 /* End of the main content */
 
