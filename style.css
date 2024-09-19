@@ -47,6 +47,7 @@ nav p {
     flex-direction: row;
     font-weight: bold;
     cursor: pointer;
+    letter-spacing: 0.1em;
 }
 
 #bottomNav {
