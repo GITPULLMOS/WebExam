@@ -33,13 +33,6 @@ var prevScrollpos = window.scrollY
 window.onscroll = function() {
     var currentScrollpos = window.scrollY
     if (prevScrollpos > currentScrollpos) {
-        document.getElementById("nav").style.top = "0"
-        document.getElementById("bottomNav").style.display = "none"
-        document.getElementById("Cover").style.display = "none"
-        document.getElementById("menu-Icon").src = "Images/menuIcon.webp"
-        displayUnderMenu = false
-    } else {
-        document.getElementById("nav").style.top = "-20vh"
         document.getElementById("bottomNav").style.display = "none"
         document.getElementById("Cover").style.display = "none"
         document.getElementById("menu-Icon").src = "Images/menuIcon.webp"

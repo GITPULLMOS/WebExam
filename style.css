@@ -6,14 +6,14 @@ body {
 
 /* Start of the Navigation bar */
 
-#nav {
+nav {
     width: 100vw;
     background-color: rgb(255,213,0);
     height: 12vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: relative;
     top: 0;
     transition: 0.3s;
     z-index: 5;
@@ -32,7 +32,7 @@ nav a {
 }
 
 #OsloMetLogo {
-    width: 7vw;
+    width: 6em;
 }
 
 #Right-Navigation-Content {
@@ -58,10 +58,8 @@ nav p {
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    top: 12.3vh;
+    top: 11.7vh;
     z-index: 2;
-
-    transition: 0.5s;
 }
 
 #bottomNav p {
@@ -75,17 +73,17 @@ nav p {
     height: 100vh;
     background-color: black;
     opacity: 0.5;
-    top: 12vh;
+    top: 0;
 
     position: fixed;
-    z-index: 1;
+    z-index: 4;
 }
 
 /* End of Navigation Bar */
 
 /* Start of the main content */
 main {
-    margin-top: 30vh;
+    margin-top: 25vh;
     margin-left: 5vw;
     margin-right: 5vw;
     display: flex;
