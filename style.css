@@ -104,15 +104,16 @@ footer{
 
 #footertop{
     border-bottom: 1px solid black;
-    height: 150px;
+    height: 24vh;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
 #footeroverskrift{
     font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 35px; 
+    font-size: 6vh; 
     width: 50%;
 }
 
@@ -124,7 +125,6 @@ footer{
     padding: 1.5vw;
     text-align: center;
     font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
-    height: 2vh;
     cursor: pointer;
 }
 
