@@ -103,6 +103,21 @@ main h2 {
     font-size: 4vh;
     font-weight: lighter;
 }
+
+#studenthistorier{
+    background-color: rgb(255,213,0);
+    width: 40%;
+    padding-right: 2%;
+    margin-left: 25%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#studenthistorierknapp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 /* End of the main content */
 
 /* Start of the footer */
