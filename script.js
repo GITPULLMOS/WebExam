@@ -32,7 +32,7 @@ function closeUnderMenu() {
 var prevScrollpos = window.scrollY
 window.onscroll = function() {
     var currentScrollpos = window.scrollY
-    if (prevScrollpos > currentScrollpos) {
+    if (prevScrollpos < currentScrollpos) {
         document.getElementById("bottomNav").style.display = "none"
         document.getElementById("Cover").style.display = "none"
         document.getElementById("menu-Icon").src = "Images/menuIcon.webp"

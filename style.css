@@ -10,12 +10,12 @@ nav {
     width: 100vw;
     background-color: rgb(255,213,0);
     height: 12vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 0;
-    transition: 0.3s;
+
     z-index: 5;
     border-bottom-style: solid;
 }
@@ -57,9 +57,9 @@ nav p {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    position: fixed;
-    top: 11.7vh;
-    z-index: 2;
+    position: relative;
+    z-index: 10;
+    margin-left:20vw;
 }
 
 #bottomNav p {
