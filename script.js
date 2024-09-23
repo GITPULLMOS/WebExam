@@ -1,7 +1,7 @@
 
 let displayUnderMenu = false
 
-function showUnderMenu() {
+function openUnderMenu() {
     var underMenu = document.getElementById("bottomNav")
     var MenuIcon = document.getElementById("menu-Icon")
     var Cover = document.getElementById("Cover")
@@ -30,6 +30,7 @@ function closeUnderMenu() {
 }
 
 var prevScrollpos = window.scrollY
+
 window.onscroll = function() {
     var currentScrollpos = window.scrollY
     if (prevScrollpos < currentScrollpos) {
@@ -39,4 +40,28 @@ window.onscroll = function() {
         displayUnderMenu = false
     }
     prevScrollpos = currentScrollpos
+}
+
+let activeButton = null
+
+function openInfo(ButtonId) {
+    var InfoSections = document.querySelectorAll(".InfoSection")
+
+    // hides previous information
+    InfoSections.forEach(section => {
+        section.style.display = "none"
+    })
+
+
+    // shows current information
+    var currentInfo = document.getElementById('info-' + ButtonId)
+    
+
+    if (activeButton === ButtonId) {
+        //closes the information if the button is pressed twice
+         activeButton = null
+    } else {
+        currentInfo.style.display = "flex"
+        activeButton = ButtonId //sets the current button as active
+    }
 }

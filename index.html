@@ -15,7 +15,7 @@
                 
                 <div id="Right-Navigation-Content">
                     <p>Søk <img src="Images/search-Icon.webp" alt="" style="width: 20px;"></p>
-                    <p onclick="showUnderMenu()">Menu <img id="menu-Icon" src="Images/menuIcon.webp " alt="" style="width: 20px;"></p>
+                    <p onclick="openUnderMenu()">Menu <img id="menu-Icon" src="Images/menuIcon.webp " alt="" style="width: 20px;"></p>
                 </div>
             </div>
             <!-- The navigation bar that pops up under the main menu  -->
@@ -33,10 +33,179 @@
         <h1>Matematisk modellering og datavitenskap – ingeniør</h1>
         <h2>Bachelor-program</h2>
 
-        <table>
-            
+        <table class="Bachelor-program">
+            <tr>
+                <td>
+                    <p>Studiested</p>
+                    <p>Pilestredet i Oslo</p>
+                </td>
+                <td>
+                    <p>Varighet</p>
+                    <p>3 år</p>
+                </td>
+                <td>
+                    <p>Omfang</p>
+                    <p>Heltid</p>
+                </td>
+                <td>
+                    <p>Studiepoeng</p>
+                    <p>180</p>
+                </td>
+
+            <tr>
+                <td>
+                    <p>Studiestart</p>
+                    <p>August</p>
+                </td>
+                <td>
+                    <p>Undervisningsspråk</p>
+                    <p>Norsk</p>
+                    <p>Engelsk</p>
+                </td>
+                <td>
+                    <p>Studieplasser</p>
+                    <p>40</p>
+                </td>
+            </tr>
+            </tr>
         </table>
 
+
+        <section>
+            <table>
+                <tr>
+                    <td onclick="openInfo('1')">Studiestart</td>
+                    <td onclick="openInfo('2')">Opptakskrav og poeng</td>
+                    <td onclick="openInfo('3')">Slik søker du</td>
+                </tr>
+                <tr>
+                    <td onclick="openInfo('4')">Hva lærer du</td>
+                    <td onclick="openInfo('5')">Studiets oppbygging</td>
+                    <td onclick="openInfo('6')">Hvordan foregår undervisningen?</td>
+                </tr>
+                <tr>
+                    <td onclick="openInfo('7')">Hva koster det?</td>
+                    <td onclick="openInfo('8')">Hva kan du jobbe som?</td>
+                    <td onclick="openInfo('9')">utveksling</td>
+                </tr>
+            </table>
+
+            <div class="InfoSection" id="info-1">
+                <p>
+                    Informasjon om program, timeplaner, pensum, fadderuker og mye mer finner du på studiestartsiden for matematisk modellering og datavitenskap - ingeniør (student.oslomet.no).
+                </p>
+                <p>
+                    NB! Vær obs på at timeplanen som ligger på studiestartsiden er en timeplan for alle studentene på kullet.
+                </p>
+                <p>
+                    For å se din personlige timeplan må du logge deg inn på "Min side" (student.oslomet.no) etter at du har aktivert IT-kontoen din og du er blitt plassert i klasse/gruppe. Dette skjer vanligvis uken før studiestart.
+                </p>
+            </div>
+
+            <div class="InfoSection" id="info-2">
+                <p>
+                    For å søke på dette programmet må du ha
+                </p>
+                <ul>
+                    <li>
+                        generell studiekompetanse (samordnaopptak.no) eller oppfylle kravene til realkompetanse
+                    </li>
+                    <li>
+                        matematikk R1 og R2
+                    </li>
+                    <li>
+                        fysikk 1
+                    </li>
+                </ul>
+                <p>
+                    Det kan ære konkurranse om plassene. Ved forrige opptak kom alle kvalifiserte søkere inn.
+                </p>
+                <p>
+                    Hvis du mangler generell studiekompetanse eller enkelte fag fra videregående skole, kan du søke på dette studiet om du har bestått ettårig forkurs for ingeniørutdanning.
+                </p>
+            </div>
+
+            <div class="InfoSection" id="info-3">
+                <p>
+                    Du søker på Samordna opptak med studiekode 215 503.
+                </p>
+                <ul>
+                    <li>15. april: ordinær søknadsfrist</li>
+                    <li>1. mars: frist for enkelte søkere</li>
+                </ul>
+                <p>
+                    Mer om å søke på bachelor.
+                </p>
+            </div>
+
+            <div class="InfoSection" id="info-4">
+                <p>
+                    Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk, fysikk og statistikk.  
+                </p>
+                <p>
+                    Du får innsikt i matematiske modeller som brukes i praktisk problemløsning blant annet i medisinsk kjemi, biologiske prosesser og ulike samfunnssystemer. 
+                </p>
+                <p>
+                    Det første studieåret har du emner i blant annet matematikk, programmering, fysikk og kjemi for å få en felles forståelse av tematikken.
+                </p>
+                <p>
+                    Det siste semesteret skriver du en bacheloroppgave tett knyttet til problemstillinger i arbeidslivet.
+                </p>
+                <p>
+                    Første året velger du hvilken av disse spesialiseringene du vil ta.
+                </p>
+                <p>INSERT BUTTONS</p>
+            </div>
+
+            <div class="InfoSection" id="info-5">
+                <p>Info kommer etter hvert</p>
+            </div>
+
+            <div class="InfoSection" id="info-6">
+                <p>
+                    Undervisningen er en kombinasjon av
+                </p>
+                <ul>
+                    <li>Prosjektarbeid</li>
+                    <li>workshop</li>
+                    <li>presentasjoner</li>
+                    <li>veiledninger</li>
+                    <li>diskusjoner og refleksjoner</li>
+                    <li>forelesninger</li>
+                    <li>selvstudier</li>
+                    <li>gruppearbeid</li>
+                    <li>arbeidslivsrelevant bacheloroppgave</li>
+                </ul>
+                <p>
+                    For å gjennomføre studiet på normert tid, må du regne med å bruke om lag 40 timer per uke på studierelatert arbeid gjennom hele semesteret.  
+                </p>
+            </div>
+
+            <div class="InfoSection" id="info-7">
+                <p>
+                    Det er ikke studieavgift på dette studiet. Du betaler en semesteravgift hvert semester (student.oslomet.no).
+                </p>
+            </div>
+
+            <div class="InfoSection" id="info-8">
+                <p>
+                    Med dette studiet får du IT-kompetanse som er etterspurt i arbeidslivet, særlig om du velger spesialiseringene vitenskapelige beregninger eller statistiske og datadrevne metoder. 
+                </p>
+                <p>
+                    Spesialiseringen i matematikk og fysikk retter seg mer mot videre studier, men også her får du etterspurt kompetanse i arbeidslivet etter bachelorstudiet. 
+                </p>
+                <p>
+                    Matematisk modellering og datavitenskap blir stadig viktigere som basisgrunnlag, i for eksempel beregninger knyttet til klima, forsikring og finans, og datadrevne metoder for verdiskaping. 
+                </p>
+                <p>
+                    Datadrevne metoder og maskinlæring er i dag svært mye brukt i arbeidslivet. 
+                </p>
+            </div>
+
+            <div class="InfoSection" id="info-9">
+                <p>Du kan dra på utveksling i femte semester.</p>
+            </div>
+        </section>
 
 
 
