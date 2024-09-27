@@ -7,39 +7,17 @@ body {
 /* Start of the Navigation bar */
 
 nav {
-    width: 100vw;
     background-color: rgb(255,213,0);
-    height: 12vh;
 
+    width: 100vw;
+    height: 12vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-
-    z-index: 5;
+    gap: 70vw;
     border-bottom-style: solid;
-}
-
-#topNav {
-    display: flex;
-    align-items: center;
     position: relative;
-    z-index: 1;
-}
-
-nav a {
-    width: 12vw;
-}
-
-#OsloMetLogo {
-    width: 6em;
-}
-
-#Right-Navigation-Content {
-    margin-left: 55vw;
-    display: flex;
-    flex-direction: row;
-    gap: 3vw;
+    z-index: 10;
 }
 
 nav p {
@@ -50,6 +28,7 @@ nav p {
 }
 
 #bottomNav {
+    top: 0;
     width: 60%;
     height: 12vh;
     background-color: rgb(255,213,0);
@@ -59,7 +38,7 @@ nav p {
     align-items: center;
     position: fixed;
     z-index: 10;
-    margin-left:20vw;
+    margin-top: 12.3vh;
 }
 
 #bottomNav p {
@@ -74,9 +53,8 @@ nav p {
     background-color: black;
     opacity: 0.5;
     top: 0;
-
     position: fixed;
-    z-index: 4;
+    z-index: -1;
 }
 
 /* End of Navigation Bar */
@@ -89,6 +67,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 main h1 {
@@ -106,7 +85,12 @@ main h2 {
 tr {
     display: flex;
     justify-content: center;
-    gap: 1vw;
+    gap: 10vw;
+}
+
+.Bachelor-program {
+    border-bottom-style: solid;
+    border-width: 0.1em;
 }
 
 .Bachelor-program td {
@@ -121,19 +105,22 @@ td p:first-child {
     font-weight: bold;
 }
 
+main h3 {
+    margin-top: 6vh;
+    font-weight: lighter;
+    width: 50vw;
+}
 
 section {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 10vh;
-    margin-bottom: 20vh;
+    padding: 5rem;
 }
 
 section table {
-    position: absolute;
     border-style: solid;
-    margin-left: -3vw;
+    margin-bottom: 3vh;
 }
 
 section tr {
@@ -154,6 +141,8 @@ section td {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 40vw;
+    height: 55%;
     background-color: rgb(255,213,0);
     width: 50vw;
     height: 51vh;
