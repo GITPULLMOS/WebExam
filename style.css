@@ -38,14 +38,9 @@ nav p {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    position: fixed;
+    position: absolute;
     z-index: 10;
-    margin-top: 12.3vh;
-}
-
-#bottomNav p {
-    cursor: pointer;
-    font-weight: bold;
+    margin-top: 12.4vh;
 }
 
 #Cover {
@@ -165,16 +160,13 @@ section td {
 
 
 .teknologiogdesign{
-    width: 100%;
+    background-color: rgb(255,213,0);
     display: flex;
     flex-direction: row;
-    margin-bottom: 4%;
-}
-
-.teknologiogdesign div{
-    background-color: rgb(255,213,0);
+    margin: 4%;
+    height: 350px;
     width: 100%;
-    padding-left: 2%;
+    padding-left: 1em;
 }
 
 .teknologiogdesign p{
@@ -182,9 +174,11 @@ section td {
 }
 
 .teknologiogdesign img {
-    height: 300px;
+    height: 100%;
+    width: 500px;
     object-fit: cover;
 }
+
 
 
 
@@ -197,6 +191,7 @@ section td {
     font-weight: bold;
     transition: background-color 0.4s ease-in-out;
     margin-bottom: 20vh;
+    
 }
 
 #studenthistorier:hover{
