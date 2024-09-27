@@ -10,25 +10,19 @@
 <body>
     <header>
         <nav id="nav">
-            <div id="topNav">
-                <a href="index.html"><img src="Images/OsloMet-logo.png" alt="Oslomet-Logo" id="OsloMetLogo"></a>
-                
-                <div id="Right-Navigation-Content">
-                    <p>Søk <img src="Images/search-Icon.webp" alt="" style="width: 20px;"></p>
-                    <p onclick="openUnderMenu()">Menu <img id="menu-Icon" src="Images/menuIcon.webp " alt="" style="width: 20px;"></p>
-                </div>
-            </div>
-            <!-- The navigation bar that pops up under the main menu  -->
-        </nav>
+            <a href="index.html"><img src="Images/OsloMet-logo.png" alt="Oslomet-Logo" id="OsloMetLogo" style="width: 6em"></a>
+            <p onclick="openUnderMenu()">Menu <img id="menu-Icon" src="Images/menuIcon.webp " alt="" style="width: 20px;"></p>
+                    <!-- The navigation bar that pops up under the main menu  -->
         <div id="bottomNav">
             <p>Accessibility</p>
             <p>GitHub</p>
             <p>Activity</p>
         </div>
-        <div id="Cover" onclick="closeUnderMenu()"></div>
+        </nav>
     </header>
-
-
+        <!-- A darker layer that appears under the navigation bar and over the main content of the website that indicates
+         that the bottom navigation bar is open-->
+         <div id="Cover" onclick="closeUnderMenu()"></div>
     <main>
         <h1>Matematisk modellering og datavitenskap – ingeniør</h1>
         <h2>Bachelor-program</h2>
@@ -70,7 +64,8 @@
             </tr>
         </table>
 
-
+        <h3>Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige oppgaver.</h3>
+        
         <section>
             <table>
                 <tr>
@@ -219,7 +214,7 @@
                 <p>Har du lyst til å finne ut hva som vil skje i fremtiden? Lær å bruke verktøy for
                  å forutsi alt fra været og strømprisene til utviklingen i boligmarkedet.</p>
             </div>
-            <div><img src="Images/teknologiogdesign.jpg" style="width: 100%; height: 100%;"></div>
+            <div><img src="Images/teknologiogdesign.jpg" style="width: 50vw; height: 100%;"></div>
         </div>
 
         <div id="studenthistorier">

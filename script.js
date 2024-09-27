@@ -23,9 +23,10 @@ function closeUnderMenu() {
     var underMenu = document.getElementById("bottomNav")
     var MenuIcon = document.getElementById("menu-Icon")
     var Cover = document.getElementById("Cover")
-
+    
     Cover.style.display = "none"
     underMenu.style.display = "none"
+    displayUnderMenu = false
     MenuIcon.src = "Images/menuIcon.webp"
 }
 
