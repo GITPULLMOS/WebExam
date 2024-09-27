@@ -138,24 +138,25 @@ section table {
 
 section tr {
     margin-bottom: 2vh;
+    height: 85px;
 }
 
 section td {
     border-style: solid;
     width: 100%;
     height: 100%;
+    margin-top: 0.2vw;
 }
 
 .InfoSection {
-    margin-left: 40vw;
+    margin-left: 38vw;
     display: none;
-    border-style: solid;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    background-color: rgb(255,213,0);
     width: 50vw;
-    height: 50vh;
+    height: 51vh;
 }
 
 .InfoSection p {
