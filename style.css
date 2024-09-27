@@ -116,8 +116,6 @@ section {
 }
 
 section table {
-    
-    border-style: solid;
     margin-bottom: 3vh;
 }
 
@@ -129,6 +127,7 @@ section td {
     border-style: solid;
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 
 .InfoSection {
@@ -139,6 +138,7 @@ section td {
     align-items: center;
     width: 40vw;
     height: 55%;
+    background-color: rgb(255,213,0);
 }
 
 .InfoSection p {
