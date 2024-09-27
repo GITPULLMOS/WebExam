@@ -119,7 +119,6 @@ section {
 }
 
 section table {
-    border-style: solid;
     margin-bottom: 3vh;
 }
 
@@ -133,10 +132,13 @@ section td {
     width: 100%;
     height: 100%;
     margin-top: 0.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .InfoSection {
-    margin-left: 38vw;
+    margin-left: 1vw;
     display: none;
     flex-direction: column;
     justify-content: center;
