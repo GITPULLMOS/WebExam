@@ -63,8 +63,8 @@ main {
     margin-right: 5vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 main h1 {
@@ -78,16 +78,17 @@ main h2 {
     text-align: center;
 }
 
-
-tr {
-    display: flex;
-    justify-content: center;
-    gap: 10vw;
-}
-
 .Bachelor-program {
     border-bottom-style: solid;
     border-width: 0.1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Bachelor-program tr {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
 }
 
 .Bachelor-program td {
@@ -102,12 +103,6 @@ td p:first-child {
     font-weight: bold;
 }
 
-main h3 {
-    margin-top: 6vh;
-    font-weight: lighter;
-    width: 50vw;
-}
-
 section {
     display: flex;
     flex-direction: column;
@@ -115,12 +110,20 @@ section {
     padding: 5rem;
 }
 
+section h3 {
+    margin-top: 6vh;
+    font-weight: lighter;
+    width: 50vw;
+}
+
 section table {
     margin-bottom: 3vh;
 }
 
 section tr {
+    display: flex;
     margin-bottom: 2vh;
+    gap: 10vw;
 }
 
 section td {
@@ -136,7 +139,7 @@ section td {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40vw;
+    width: 60vw;
     height: 55%;
     background-color: rgb(255,213,0);
 }
@@ -149,24 +152,24 @@ section td {
     list-style-type: disc;
 }
 
-
-
-
-
-
-
-
-
-
-
 .teknologiogdesign{
     background-color: rgb(255,213,0);
     display: flex;
-    flex-direction: row;
-    margin: 4%;
-    height: 350px;
     width: 100%;
+    height: 60vh;
     padding-left: 1em;
+    justify-content: space-between;
+}
+
+.teknologiogdesign h3 {
+    width: none;
+}
+
+.teknologiogdesign div {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    text-align: start;
 }
 
 .teknologiogdesign p{
@@ -174,15 +177,17 @@ section td {
 }
 
 .teknologiogdesign img {
+    width: 100%;
     height: 100%;
-    width: 500px;
     object-fit: cover;
+
 }
 
 
 
 
 #studenthistorier{
+    margin-top: 4%; 
     background-color: rgb(255,213,0);
     width: 40%;
     padding: 1%;
