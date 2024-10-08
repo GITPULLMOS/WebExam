@@ -47,22 +47,28 @@ let activeButton = null
 
 function openInfo(ButtonId) {
     var InfoSections = document.querySelectorAll(".InfoSection")
+    var InfoButtons = document.querySelectorAll(".InfoButton")
 
     // hides previous information
     InfoSections.forEach(section => {
         section.style.display = "none"
     })
 
+    InfoButtons.forEach(buttons => {
+        buttons.style.backgroundColor = "white"
+    })
 
     // shows current information
     var currentInfo = document.getElementById('info-' + ButtonId)
-    
+    var currentButton = document.getElementById('button-' + ButtonId)
 
     if (activeButton === ButtonId) {
         //closes the information if the button is pressed twice
          activeButton = null
+         currentButton.style.backgroundColor = "white"
     } else {
         currentInfo.style.display = "flex"
         activeButton = ButtonId //sets the current button as active
+        currentButton.style.backgroundColor = "lightgrey"
     }
 }
