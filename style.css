@@ -280,7 +280,16 @@ ul{
 
 #medier li{
     margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+#medier img {
+    height: 2em;
+    margin-right: .5em;
+}
+
 
 #logo{
     width: 5%;
