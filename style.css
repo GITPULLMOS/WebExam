@@ -1,3 +1,7 @@
+:root {
+    --OsloMet-gul: rgb(255,213,0);
+}
+
 body {
     margin: 0;
     font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
@@ -9,7 +13,7 @@ body {
 /* Start of the Navigation bar */
 
 nav {
-    background-color: rgb(255,213,0);
+    background-color: var(--OsloMet-gul);
     width: 100%;
     max-width: 100%;
     height: 12vh;
@@ -140,7 +144,7 @@ section td {
     align-items: center;
     width: 60vw;
     min-height: 40vh;
-    background-color: rgb(255,213,0);
+    background-color: var(--OsloMet-gul);
 }
 
 .InfoSection p {
@@ -151,8 +155,24 @@ section td {
     list-style-type: disc;
 }
 
+.moreInfoSection {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    background-color: var(--OsloMet-gul);
+}
+
+.moreInfoButton {
+    cursor: pointer;
+    border-bottom: .2em solid black;
+    padding: 1em;
+    border-radius: 30%;
+}
+
 .teknologiogdesign{
-    background-color: rgb(255,213,0);
+    background-color: var(--OsloMet-gul);
     display: flex;
     /* flex-wrap: wrap-reverse; */
     width: 92vw;
@@ -187,7 +207,7 @@ section td {
 
 #studenthistorier{
     margin-top: 4%; 
-    background-color: rgb(255,213,0);
+    background-color: var(--OsloMet-gul);
     width: 40%;
     padding: 1%;
     padding-right: 2%;
@@ -199,7 +219,7 @@ section td {
 }
 
 #studenthistorier:hover{
-    background-color: rgb(201, 168, 3);
+    background-color: var(--OsloMet-gul);
 }
 
 #studenthistorierknapp{
@@ -211,7 +231,7 @@ section td {
 
 /* Start of the footer */
 footer{
-    background-color: rgb(255,213,0);
+    background-color: var(--OsloMet-gul);
     height: 90vh;
     position: relative;
     z-index: 0;
