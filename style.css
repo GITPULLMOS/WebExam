@@ -171,6 +171,38 @@ section td {
     border-radius: 30%;
 }
 
+/* Styling for "Studiets oppbygging" */
+
+#info-5 {
+    display: flex;
+}
+
+#info-5 ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
+    overflow: hidden;
+    justify-content: space-around;
+}
+
+#info-5 li {
+    border-top: 1px solid black;
+    padding-top: 1em;
+    width: 10em;
+    font-size: .75rem;
+    font-weight: bolder;
+}
+
+#info-5 section {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+/* Slutt */
+
 .teknologiogdesign{
     background-color: var(--OsloMet-gul);
     display: flex;
