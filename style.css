@@ -124,6 +124,7 @@ section tr {
     display: flex;
     margin-bottom: 2vh;
     height: 4vw;
+    gap: 1em;
 }
 
 section td {
