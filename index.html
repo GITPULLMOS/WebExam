@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>OsloMet</title>
     <script src="script.js"></script>
 </head>
 <body>
     <header>
-        <nav id="nav">
+        <nav>
             <a href="index.html"><img src="Images/OsloMet-logo.png" alt="Oslomet-Logo" id="OsloMetLogo" style="width: 6em"></a>
-            <p onclick="openUnderMenu()">Menu <img id="menu-Icon" src="Images/menuIcon.webp " alt="" style="width: 20px;"></p>
-                    <!-- The navigation bar that pops up under the main menu  -->
-        <div id="bottomNav">
-            <p>Accessibility</p>
-            <p>GitHub</p>
-            <p>Activity</p>
-        </div>
+            <a href="subsites/accessibility.html" target="_blank"><p>Accessibility</p></a>
+            <a href="subsites/github.html" target="_blank"><p>GitHub</p></a>
+            <a href="subsites/activitiy.html" target="_blank"><p>Activity</p></a>
+            <a href="EnglishIndex.html"><p>English</p></a>
+        <!-- The navigation bar that pops up under the main menu  -->
+        <!-- <div id="bottomNav">
+            <a href="undersider/accessibility.html" target="_blank"><p>Accessibility</p></a>
+            <a href="undersider/github.html" target="_blank"><p>GitHub</p></a>
+            <a href="undersider/activitiy.html" target="_blank"><p>Activity</p></a>
+        </div> -->
         </nav>
+
         <!-- A darker layer that appears under the navigation bar and over the main content of the website that indicates
          that the bottom navigation bar is open-->
-         <div id="Cover" onclick="closeUnderMenu()"></div>
+         <!-- <div id="Cover" onclick="closeUnderMenu()"></div> -->
     </header>
     <main>
         <h1>Matematisk modellering og datavitenskap – ingeniør</h1>
@@ -45,7 +50,7 @@
                     <p>Studiepoeng</p>
                     <p>180</p>
                 </td>
-
+            </tr>
             <tr>
                 <td>
                     <p>Studiestart</p>
@@ -61,7 +66,6 @@
                     <p>40</p>
                 </td>
             </tr>
-            </tr>
         </table>
         
         <section>
@@ -73,14 +77,14 @@
                     <td class="InfoButton" id="button-3" onclick="openInfo('3')">Slik søker du</td>
                 </tr>
                 <tr>
-                    <td class="InfoButton" id="button-4" onclick="openInfo('4')">Hva lærer du</td>
+                    <td class="InfoButton" id="button-4" onclick="openInfo('4')">Hva lærer du?</td>
                     <td class="InfoButton" id="button-5" onclick="openInfo('5')">Studiets oppbygging</td>
                     <td class="InfoButton" id="button-6" onclick="openInfo('6')">Hvordan foregår undervisningen?</td>
                 </tr>
                 <tr>
                     <td class="InfoButton" id="button-7" onclick="openInfo('7')">Hva koster det?</td>
                     <td class="InfoButton"  id="button-8" onclick="openInfo('8')">Hva kan du jobbe som?</td>
-                    <td class="InfoButton" id="button-9" onclick="openInfo('9')">utveksling</td>
+                    <td class="InfoButton" id="button-9" onclick="openInfo('9')">Utveksling</td>
                 </tr>
             </table>
 
@@ -112,7 +116,7 @@
                     </li>
                 </ul>
                 <p>
-                    Det kan ære konkurranse om plassene. Ved forrige opptak kom alle kvalifiserte søkere inn.
+                    Det kan være konkurranse om plassene. Ved forrige opptak kom alle kvalifiserte søkere inn.
                 </p>
                 <p>
                     Hvis du mangler generell studiekompetanse eller enkelte fag fra videregående skole, kan du søke på dette studiet om du har bestått ettårig forkurs for ingeniørutdanning.
@@ -148,11 +152,255 @@
                 <p>
                     Første året velger du hvilken av disse spesialiseringene du vil ta.
                 </p>
-                <p>INSERT BUTTONS</p>
+                
+                <!-- Knappene som er inne i en knapp, skal vise utdypende info om hva du lærer -->
+                <p class="moreInfoButton" id="moreInfoButton-1" onclick="openMoreInfo('1')">Statistiske og datadrevne metoder</p>
+                <p class="moreInfoButton" id="moreInfoButton-2" onclick="openMoreInfo('2')">Vitenskapelige beregninger</p>
+                <p class="moreInfoButton" id="moreInfoButton-3" onclick="openMoreInfo('3')">Matematikk og fysikk</p>
+                <section>
+                    <!-- Den utdypende infoen som de tre knappene over skal vise -->
+                    <div class="moreInfoSection" id="moreInfo-1">
+                        <article>
+                            Du lærer om hvordan du kan bruke målte data koblet med datadrevne og statistiske metoder til å gjøre beregninger, for eksempel av fremtidige strømpriser. <br>
+                            Du lærer hvordan du kan løse komplekse og sammensatte problemer, og utforske høydimensjonale datatyper. <br>
+                            Moderne metoder innen maskinlæring og kunstig intelligens står sentralt.
+                        </article>
+                    </div>
+                    <div class="moreInfoSection" id="moreInfo-2">
+                        <article>
+                            Du lærer å lage effektive algoritmer, datastrukturer og kildekoder for å løse matematiske og fysiske problemer med numeriske metoder. <br>
+                            Du lærer å utvikle kildekode og metodikk knyttet til medisinsk teknologi, biologiske prosesser og annet.
+                        </article>
+                    </div>
+                    <div class="moreInfoSection" id="moreInfo-3">
+                        <article>
+                            Du utforsker algebraiske strukturer, blant annet knyttet til dyp læring og kunstig intelligens. <br>
+                            Du lærer differensialgeometri på flater, gruppeteori og kodeteori; matematiske strukturer, representasjonsteori og kategoriteori. <br>
+                            I fysikk lærer du om termodynamikk og statistisk fysikk.
+                        </article>
+                    </div>
+                </section>
+                
+                
+
+
+
             </div>
             
             <div class="InfoSection" id="info-5">
-                <p>Info kommer etter hvert</p>
+                <h3>1. Studieår</h3>
+                <section>
+                    <h4>1. semester</h4>
+                    <ul>
+                        <li>
+                            Diskret mattematikk
+                        </li>
+                        <li>
+                            Programmering
+                        </li>
+                        <li>
+                            Teknologi og samfunn for programmerere
+                        </li>
+                        <li>
+                            Innføring i modeller og beregninger
+                        </li>
+                    </ul>
+                    <h4>2. semester</h4>
+                    <ul>
+                        <li>
+                            Matematikk 1000
+                        </li>
+                        <li>
+                            Fysikk og kjemi
+                        </li>
+                        <li>
+                            Databaser
+                        </li>
+                    </ul>
+                </section>
+                <h3>2. Studieår</h3>
+                <section>
+                    <h4>3. semester</h4>
+                    <ul>
+                        <li>
+                            Mattematikk 2000 med statistikk
+                        </li>
+                        <li>
+                            Moderne fysikk
+                        </li>
+                    </ul>
+                    <h4>4. semester</h4>
+                    <ul>
+                        <li>
+                            Matematikk 4000
+                        </li>
+                    </ul>
+                    <h4>Emnegruppe: Matematikk og fysikk</h4>
+                    <h4>3. semester</h4>
+                    <ul>
+                        <li>
+                            Lineær algebra og introduksjon til gruppeteori
+                        </li>
+                    </ul>
+                    <h4>4. semester</h4>
+                    <ul>
+                        <li>
+                            Termodynamikk og statistisk fysikk
+                        </li>
+                        <li>
+                            Symmetrier og algebraiske strukturer
+                        </li>
+                    </ul>
+                    <h4>Emnegruppe: Statistiske og datadrevne metoder</h4>
+                    <h4>3. semester</h4>
+                    <ul>
+                        <li>
+                            Algoritmer og datastrukturer
+                        </li>
+                    </ul>
+                    <h4>4. semester</h4>
+                    <ul>
+                        <li>
+                            Statistisk analyse
+                        </li>
+                        <li>
+                            Visualisering
+                        </li>
+                        <li>
+                            Avansert modellering og beregninger
+                        </li>
+                    </ul>
+                    <h4>Emnegruppe: Vitenskapelige beregninger</h4>
+                    <h4>3. semester</h4>
+                    <ul>
+                        <li>
+                            Algoritmer og datastrukturer
+                        </li>
+                    </ul>
+                    <h4>4. semester</h4>
+                    <ul>
+                        <li>
+                            Ressurseffektive programmer
+                        </li>
+                        <li>
+                            Avansert modellering og beregninger
+                        </li>
+                    </ul>
+                </section>
+                <h3>3. Studieår</h3>
+                <section>
+                    <h4>5. semester</h4>
+                    <ul>
+                        <li>
+                            Mattematikk 3000
+                        </li>
+                    </ul>
+                    <h4>6. semester</h4>
+                    <ul>
+                        <li>
+                            Bacheloroppgave
+                        </li>
+                    </ul>
+                    <h4>Emnegruppe: Matematikk og fysikk</h4>
+                    <h4>5. semester</h4>
+                    <ul>
+                        <li>
+                            Reell analyse
+                        </li>
+                        <li>
+                            Introduksjon til IT-forskning
+                        </li>
+                        <li>
+                            Introduction to Data Science with Scripting
+                        </li>
+                        <li>
+                            Datasikkerhet
+                        </li>
+                        <li>
+                            Simulering og visualisering
+                        </li>
+                    </ul>
+                    <h4>6. semester</h4>
+                    <ul>
+                        <li>
+                            Testing av programvare
+                        </li>
+                        <li>
+                            Datanettverk og skytjenester
+                        </li>
+                        <li>
+                            Ressurseffektive programmer
+                        </li>
+                        <li>
+                            Avansert modellering og beregninger
+                        </li>
+                    </ul>
+                    <h4>Emnegruppe: Statistiske og datadrevne metoder</h4>
+                    <h4>5. semester</h4>
+                    <ul>
+                        <li>
+                            Introduksjon til Kunstig Intelligens
+                        </li>
+                        <li>
+                            Introduksjon til IT-forskning
+                        </li>
+                        <li>
+                            Anvendt kunstig intelligens og data science prosjekt
+                        </li>
+                        <li>
+                            Datasikkerhet
+                        </li>
+                        <li>
+                            Simulering og visualisering
+                        </li>
+                    </ul>
+                    <h4>6. semester</h4>
+                    <ul>
+                        <li>
+                            Testing av programvare
+                        </li>
+                        <li>
+                            Datanettverk og skytjenester
+                        </li>
+                        <li>
+                            Ressurseffektive programmer
+                        </li>
+                    </ul>
+                    <h4>Emnegruppe: Vitenskapelige beregninger</h4>
+                    <h4>5. semester</h4>
+                    <ul>
+                        <li>
+                            Simulering og visualisering
+                        </li>
+                        <li>
+                            Introduksjon til IT-forskning
+                        </li>
+                        <li>
+                            Datasikkerhet
+                        </li>
+                        <li>
+                            Lineær algebra og introduksjon til gruppeteori
+                        </li>
+                        <li>
+                            Reell analyse
+                        </li>
+                    </ul>
+                    <h4>6. semester</h4>
+                    <ul>
+                        <li>
+                            Visualisering
+                        </li>
+                        <li>
+                            Testing av programvare
+                        </li>
+                        <li>
+                            Datanettverk og skytjenester
+                        </li>
+                        <li>
+                            Symmetrier og algebraiske strukturer
+                        </li>
+                    </ul>
+                </section>
             </div>
 
             <div class="InfoSection" id="info-6">
@@ -200,6 +448,7 @@
                 <p>Du kan dra på utveksling i femte semester.</p>
             </div>
         </section>
+        
 
 
 
@@ -245,7 +494,11 @@
             </div>
             <div>
                 <ul id="liste">
-                    <li><p>Engelsk</p></li>
+                    <li>
+                        <a href="EnglishIndex.html">
+                            <p>English</p>
+                        </a>
+                    </li>
                     <li><p>Alumni</p></li>
                     <li><p>Ansatteoversikt</p></li>
                     <li><p>Arrangementsoversikt</p></li>
@@ -260,10 +513,11 @@
             </div>
             <div id="medier">
                 <ul>
-                    <li>Facebook</li>
-                    <li>(X) Twitter</li>
-                    <li>LinkedIn</li>
-                    <li>Instagram</li>
+                    <li><img src="Images/icons8-facebook-50.png" alt=""><p>Facebook</p></li>
+                    <li><img src="Images/icons8-x-50.png" alt=""><p>(X) Twitter</p></li>
+                    <li><img src="Images/icons8-linkedin-50.png" alt=""><p>LinkedIn</p></li>
+                    <li><img src="Images/icons8-instagram-50.png" alt=""><p>Instagram</p></li>
+                    <!-- Iconer hentet fra https://icons8.com -->
                 </ul>
             </div>
         </div>

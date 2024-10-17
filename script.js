@@ -1,49 +1,50 @@
 
-let displayUnderMenu = false
+// let displayUnderMenu = false
 
-function openUnderMenu() {
-    var underMenu = document.getElementById("bottomNav")
-    var MenuIcon = document.getElementById("menu-Icon")
-    var Cover = document.getElementById("Cover")
+// function openUnderMenu() {
+//     var underMenu = document.getElementById("bottomNav")
+//     var MenuIcon = document.getElementById("menu-Icon")
+//     var Cover = document.getElementById("Cover")
 
-    if (!displayUnderMenu) {
-        underMenu.style.display = "flex"
-        Cover.style.display = "flex"
-        MenuIcon.src = "Images/kryss.webp"
-        displayUnderMenu = true
-    } else {
-        underMenu.style.display = "none"
-        Cover.style.display = "none"
-        MenuIcon.src = "Images/menuIcon.webp"
-        displayUnderMenu = false
-    }
-}
+//     if (!displayUnderMenu) {
+//         underMenu.style.display = "flex"
+//         Cover.style.display = "flex"
+//         MenuIcon.src = "Images/kryss.webp"
+//         displayUnderMenu = true
+//     } else {
+//         underMenu.style.display = "none"
+//         Cover.style.display = "none"
+//         MenuIcon.src = "Images/menuIcon.webp"
+//         displayUnderMenu = false
+//     }
+// }
 
-function closeUnderMenu() {
-    var underMenu = document.getElementById("bottomNav")
-    var MenuIcon = document.getElementById("menu-Icon")
-    var Cover = document.getElementById("Cover")
+// function closeUnderMenu() {
+//     var underMenu = document.getElementById("bottomNav")
+//     var MenuIcon = document.getElementById("menu-Icon")
+//     var Cover = document.getElementById("Cover")
     
-    Cover.style.display = "none"
-    underMenu.style.display = "none"
-    displayUnderMenu = false
-    MenuIcon.src = "Images/menuIcon.webp"
-}
+//     Cover.style.display = "none"
+//     underMenu.style.display = "none"
+//     displayUnderMenu = false
+//     MenuIcon.src = "Images/menuIcon.webp"
+// }
 
-var prevScrollpos = window.scrollY
+// var prevScrollpos = window.scrollY
 
-window.onscroll = function() {
-    var currentScrollpos = window.scrollY
-    if (prevScrollpos < currentScrollpos) {
-        document.getElementById("bottomNav").style.display = "none"
-        document.getElementById("Cover").style.display = "none"
-        document.getElementById("menu-Icon").src = "Images/menuIcon.webp"
-        displayUnderMenu = false
-    }
-    prevScrollpos = currentScrollpos
-}
+// window.onscroll = function() {
+//     var currentScrollpos = window.scrollY
+//     if (prevScrollpos < currentScrollpos) {
+//         document.getElementById("bottomNav").style.display = "none"
+//         document.getElementById("Cover").style.display = "none"
+//         document.getElementById("menu-Icon").src = "Images/menuIcon.webp"
+//         displayUnderMenu = false
+//     }
+//     prevScrollpos = currentScrollpos
+// }
 
 let activeButton = null
+let activeMoreInfoButton = null
 
 function openInfo(ButtonId) {
     var InfoSections = document.querySelectorAll(".InfoSection")
@@ -70,5 +71,31 @@ function openInfo(ButtonId) {
         currentInfo.style.display = "flex"
         activeButton = ButtonId //sets the current button as active
         currentButton.style.backgroundColor = "lightgrey"
+        var InfoSections = document.querySelectorAll(".moreInfoSection")
+        InfoSections.forEach(section => {
+            section.style.display = "none"
+        })
+    }
+}
+
+
+function openMoreInfo(ButtonId) {
+    var InfoSections = document.querySelectorAll(".moreInfoSection")
+    var InfoButtons = document.querySelectorAll(".moreInfoButton")
+
+    InfoSections.forEach(section => {
+        section.style.display = "none"
+    })
+
+    // shows current information
+    var currentInfo = document.getElementById('moreInfo-' + ButtonId)
+    var currentButton = document.getElementById('moreInfoButton-' + ButtonId)
+
+    if (activeMoreInfoButton === ButtonId) {
+        //closes the information if the button is pressed twice
+         activeMoreInfoButton = null
+    } else {
+        currentInfo.style.display = "flex"
+        activeMoreInfoButton = ButtonId //sets the current button as active
     }
 }

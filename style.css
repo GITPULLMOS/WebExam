@@ -1,25 +1,26 @@
+:root {
+    --OsloMet-gul: rgb(255,213,0);
+}
+
 body {
     margin: 0;
     font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
     overflow-x: hidden;
+    background-color: white;
 }
 
 
 /* Start of the Navigation bar */
 
 nav {
-    background-color: rgb(255,213,0);
-
+    background-color: var(--OsloMet-gul);
     width: 100%;
     max-width: 100%;
     height: 12vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 70vw;
+    justify-content: space-around;
     border-bottom-style: solid;
-    position: relative;
-    z-index: 10;
 }
 
 nav p {
@@ -29,7 +30,7 @@ nav p {
     cursor: pointer;
 }
 
-#bottomNav {
+/* #bottomNav {
     top: 0;
     width: 60%;
     height: 12vh;
@@ -52,7 +53,7 @@ nav p {
     top: 0;
     position: fixed;
     z-index: 1;
-}
+} */
 
 /* End of Navigation Bar */
 
@@ -130,9 +131,8 @@ section td {
     place-content: center;
     border-style: solid;
     width: 100%;
-    height: 100%;
     cursor: pointer;
-    height: 3em;
+    padding: 1em;
 }
 
 .InfoSection {
@@ -142,25 +142,78 @@ section td {
     justify-content: center;
     align-items: center;
     width: 60vw;
-    height: 55%;
-    background-color: rgb(255,213,0);
+    min-height: 40vh;
+    background-color: var(--OsloMet-gul);
 }
 
 .InfoSection p {
-    margin-left: 1vw;
+    padding: 1vw;
 }
 
 .InfoSection ul {
     list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: flex-start;
 }
 
-.teknologiogdesign{
-    background-color: rgb(255,213,0);
+.moreInfoSection {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    background-color: var(--OsloMet-gul);
+}
+
+.moreInfoButton {
+    cursor: pointer;
+    border-bottom: .2em solid black;
+    padding: 1em;
+    border-radius: 30%;
+}
+
+/* Styling for "Studiets oppbygging" */
+
+#info-5 {
+    display: none;
+}
+
+#info-5 ul{
+    list-style: none;
+    padding: 0;
     display: flex;
-    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50vw;
+    overflow: hidden;
+    justify-content: space-around;
+}
+
+#info-5 li {
+    border-top: 1px solid black;
+    text-align: center;
+    padding-top: 1em;
+    width: 10em;
+    font-size: .75rem;
+    font-weight: bolder;
+}
+
+#info-5 section {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+/* Slutt */
+
+.teknologiogdesign{
+    background-color: var(--OsloMet-gul);
+    display: flex;
+    /* flex-wrap: wrap-reverse; */
+    width: 92vw;
     height: 60vh;
-    padding-left: 1em;
-    justify-content: space-between;
 }
 
 .teknologiogdesign h3 {
@@ -170,8 +223,9 @@ section td {
 .teknologiogdesign div {
     display: flex;
     flex-direction: column;
-    width: 50vw;
     text-align: start;
+    padding-left: 1em;
+    justify-content: center;
 }
 
 .teknologiogdesign p{
@@ -179,7 +233,7 @@ section td {
 }
 
 .teknologiogdesign img {
-    width: 100%;
+    width: 45vw;
     height: 100%;
     object-fit: cover;
 
@@ -190,7 +244,7 @@ section td {
 
 #studenthistorier{
     margin-top: 4%; 
-    background-color: rgb(255,213,0);
+    background-color: var(--OsloMet-gul);
     width: 40%;
     padding: 1%;
     padding-right: 2%;
@@ -202,7 +256,7 @@ section td {
 }
 
 #studenthistorier:hover{
-    background-color: rgb(201, 168, 3);
+    background-color: var(--OsloMet-gul);
 }
 
 #studenthistorierknapp{
@@ -214,7 +268,7 @@ section td {
 
 /* Start of the footer */
 footer{
-    background-color: rgb(255,213,0);
+    background-color: var(--OsloMet-gul);
     height: 90vh;
     position: relative;
     z-index: 0;
@@ -283,7 +337,16 @@ ul{
 
 #medier li{
     margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+#medier img {
+    height: 2em;
+    margin-right: .5em;
+}
+
 
 #logo{
     width: 5%;
