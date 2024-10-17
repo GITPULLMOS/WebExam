@@ -177,7 +177,7 @@ section td {
 /* Styling for "Studiets oppbygging" */
 
 #info-5 {
-    display: flex;
+    display: none;
 }
 
 #info-5 ul{
