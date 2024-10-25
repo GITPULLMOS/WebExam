@@ -16,11 +16,15 @@ nav {
     background-color: var(--OsloMet-gul);
     width: 100%;
     max-width: 100%;
-    height: 12vh;
+    height: 6em;
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-bottom-style: solid;
+}
+
+nav a:nth-child(6) {
+    display: none;
 }
 
 nav p {
