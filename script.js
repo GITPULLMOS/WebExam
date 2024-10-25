@@ -45,6 +45,7 @@
 
 let activeButton = null
 let activeMoreInfoButton = null
+let activeEvenMoreInfoButton = null
 
 function openInfo(ButtonId) {
     var InfoSections = document.querySelectorAll(".InfoSection")
