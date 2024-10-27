@@ -306,7 +306,6 @@ section td {
 /* Start of the footer */
 footer{
     background-color: var(--OsloMet-gul);
-    height: 90vh;
     height: 36rem;
     position: relative;
     z-index: 0;
