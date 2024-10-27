@@ -21,9 +21,15 @@ nav {
     align-items: center;
     justify-content: space-around;
     border-bottom-style: solid;
+    position: relative;
+    z-index: 100;
 }
 
-nav a:nth-child(6) {
+nav a:first-child {
+    margin-left: -5vw;
+}
+
+nav a:nth-child(5) {
     display: none;
 }
 
@@ -34,18 +40,20 @@ nav p {
     cursor: pointer;
 }
 
-/* #bottomNav {
-    top: 0;
-    width: 60%;
-    height: 12vh;
-    background-color: rgb(255,213,0);
+#bottomNav {
+    width: 100vw;
+    background-color: var(--OsloMet-gul);
     display: none;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     position: absolute;
     z-index: 10;
-    margin-top: 12.4vh;
+    font-weight: bold;
+}
+
+#bottomNav a:nth-child(n) {
+    display: block;
 }
 
 #Cover {
@@ -57,7 +65,24 @@ nav p {
     top: 0;
     position: fixed;
     z-index: 1;
-} */
+}
+
+@media screen and (max-width: 500px) {
+    nav a:nth-child(2),
+    nav a:nth-child(3),
+    nav a:nth-child(4) {
+        display: none;
+    }
+
+    nav a:nth-child(5) {
+        display: block;
+    }
+
+    #bottomNav {
+        display: none;
+    }
+    
+}
 
 /* End of Navigation Bar */
 
@@ -98,7 +123,7 @@ main h2 {
 .Bachelor-program td {
     border-top-style: solid;
     border-width: 0.1em;
-    width: 13vw;
+    width: 10em;
     text-align: center;
 
 }
@@ -127,17 +152,16 @@ section table {
 section tr {
     display: flex;
     margin-bottom: 2vh;
-    height: 4vw;
-    gap: 1em;
+    gap: 2em;
 }
 
 section td {
     display: grid;
     place-content: center;
     border-style: solid;
-    width: 100%;
     cursor: pointer;
-    padding: 1em;
+    width: 10em;
+    height: 3em;
 }
 
 .InfoSection {
@@ -218,9 +242,14 @@ section td {
 .teknologiogdesign{
     background-color: var(--OsloMet-gul);
     display: flex;
-    /* flex-wrap: wrap-reverse; */
     width: 92vw;
     height: 60vh;
+}
+
+@media screen and (max-width: 940px) {
+    .teknologiogdesign {
+        flex-direction: column-reverse;
+    }
 }
 
 .teknologiogdesign h3 {
@@ -240,7 +269,8 @@ section td {
 }
 
 .teknologiogdesign img {
-    width: 45vw;
+    vertical-align: bottom;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 
@@ -310,8 +340,8 @@ footer{
 
 #footerinfo{
     display: flex;
-    gap: 10vw;
-    margin: 5%;
+    justify-content: space-around;
+    margin-right: 10vw;
 }
 
 h2{

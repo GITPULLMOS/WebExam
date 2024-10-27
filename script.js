@@ -1,47 +1,53 @@
 
-// let displayUnderMenu = false
+ let displayUnderMenu = false
 
-// function openUnderMenu() {
-//     var underMenu = document.getElementById("bottomNav")
-//     var MenuIcon = document.getElementById("menu-Icon")
-//     var Cover = document.getElementById("Cover")
+ function openUnderMenu() {
+     var underMenu = document.getElementById("bottomNav")
+     var Cover = document.getElementById("Cover")
 
-//     if (!displayUnderMenu) {
-//         underMenu.style.display = "flex"
-//         Cover.style.display = "flex"
-//         MenuIcon.src = "Images/kryss.webp"
-//         displayUnderMenu = true
-//     } else {
-//         underMenu.style.display = "none"
-//         Cover.style.display = "none"
-//         MenuIcon.src = "Images/menuIcon.webp"
-//         displayUnderMenu = false
-//     }
-// }
+     if (!displayUnderMenu) {
+         underMenu.style.display = "flex"
+         Cover.style.display = "flex"
+         displayUnderMenu = true
+     } else {
+         underMenu.style.display = "none"
+         Cover.style.display = "none"
+         displayUnderMenu = false
+     }
+     console.log(displayUnderMenu);
+     
+ }
 
-// function closeUnderMenu() {
-//     var underMenu = document.getElementById("bottomNav")
-//     var MenuIcon = document.getElementById("menu-Icon")
-//     var Cover = document.getElementById("Cover")
+ function closeUnderMenu() {
+     var underMenu = document.getElementById("bottomNav")
+     var Cover = document.getElementById("Cover")
     
-//     Cover.style.display = "none"
-//     underMenu.style.display = "none"
-//     displayUnderMenu = false
-//     MenuIcon.src = "Images/menuIcon.webp"
-// }
+     Cover.style.display = "none"
+     underMenu.style.display = "none"
+     displayUnderMenu = false
+ }
 
-// var prevScrollpos = window.scrollY
+ var prevScrollpos = window.scrollY
 
-// window.onscroll = function() {
-//     var currentScrollpos = window.scrollY
-//     if (prevScrollpos < currentScrollpos) {
-//         document.getElementById("bottomNav").style.display = "none"
-//         document.getElementById("Cover").style.display = "none"
-//         document.getElementById("menu-Icon").src = "Images/menuIcon.webp"
-//         displayUnderMenu = false
-//     }
-//     prevScrollpos = currentScrollpos
-// }
+ window.onscroll = function() {
+     var currentScrollpos = window.scrollY
+     if (prevScrollpos < currentScrollpos) {
+         document.getElementById("bottomNav").style.display = "none"
+         document.getElementById("Cover").style.display = "none"
+         displayUnderMenu = false
+     }
+     prevScrollpos = currentScrollpos
+     console.log(displayUnderMenu);
+     
+ }
+
+ window.addEventListener('resize', () => {
+    if (window.innerWidth >= 500) {
+        document.getElementById("bottomNav").style.display = "none"
+        document.getElementById("Cover").style.display = "none"
+        displayUnderMenu = false
+    }
+ })
 
 let activeButton = null
 let activeMoreInfoButton = null
