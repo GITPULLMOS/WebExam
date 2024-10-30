@@ -164,6 +164,10 @@ section td {
     height: 3em;
 }
 
+.InfoButton{
+    height: 1.5rem;
+}
+
 .InfoSection {
     display: none;
     border-style: solid;
