@@ -246,41 +246,56 @@ section td {
 .teknologiogdesign{
     background-color: var(--OsloMet-gul);
     display: flex;
-    width: 92vw;
-    height: 60vh;
-}
-
-@media screen and (max-width: 940px) {
-    .teknologiogdesign {
-        flex-direction: column-reverse;
-    }
-}
-
-.teknologiogdesign h3 {
-    width: none;
+    flex-direction: row;
+    width: 90vw;
+    height: 50vh;
+    padding: 0;
 }
 
 .teknologiogdesign div {
     display: flex;
     flex-direction: column;
-    text-align: start;
-    padding-left: 1em;
-    justify-content: center;
+    text-align: start;  
+    padding: 2em;
 }
 
 .teknologiogdesign p{
     font-size: 1.2em;
 }
 
-.teknologiogdesign img {
-    vertical-align: bottom;
+.teknologiogdesign p:first-child{
+    font-weight: bold;
+    text-decoration: underline;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-
 }
 
+.teknologiogdesign p:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: -0.5em;
+}
 
+.teknologiogdesign img {
+    object-fit: cover;
+    height: 100%;
+    width: 45vw;
+}
+
+@media screen and (max-width: 750px) {
+    .teknologiogdesign {
+        height: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .teknologiogdesign {
+        font-size: 0.8em;
+    }
+
+    .teknologiogdesign img {
+        width: 100%;
+        min-height: 30vh;
+    }
+}
 
 
 #studenthistorier{
