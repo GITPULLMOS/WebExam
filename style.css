@@ -324,7 +324,7 @@ footer{
     align-items: center;
 }
 
-#footeroverskrift{
+.footeroverskrift{
     font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
     font-size: 6vh; 
     width: 50%;
@@ -397,6 +397,12 @@ ul{
 a {
     color: inherit;
     text-decoration: inherit;
+  }
+
+  @media screen and (max-width: 500px){
+    .footeroverskrift{
+        font-size: 3vh;
+    }
   }
 
   /* End of footer */
