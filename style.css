@@ -347,11 +347,11 @@ footer{
     background-color: black;
     font-weight: bold;
     color: white;
-    width: 20vw;
+    width: vw;
     padding: 1vw;
     text-align: center;
     font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 2vw;
+    font-size: 1.5vw;
     cursor: pointer;
 }
 
