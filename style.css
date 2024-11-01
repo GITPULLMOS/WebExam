@@ -81,7 +81,7 @@ nav p {
     #bottomNav {
         display: none;
     }
-    
+
 }
 
 /* End of Navigation Bar */
@@ -93,13 +93,11 @@ main {
     margin-right: 5vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
 }
 
 main h1 {
     font-size: 3em;
-    text-align: center;
 }
 
 main h2 {
@@ -108,11 +106,7 @@ main h2 {
     text-align: center;
 }
 
-.Bachelor-program {
-    border-bottom-style: solid;
-    border-width: 0.1em;
-    display: flex;
-}
+/* Start of "Bachelor-program" table */
 
 .Bachelor-program tr {
     display: flex;
@@ -120,17 +114,47 @@ main h2 {
     gap: 10vw;
 }
 
-.Bachelor-program td {
-    border-top-style: solid;
-    border-width: 0.1em;
-    width: 10em;
-    text-align: center;
+.Bachelor-program tr:last-child {
+    padding-top: 2em;
+}
 
+.Bachelor-program td {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    border-left-style: solid;
+    border-width: 0.1em;
+    padding-left: 3vw;
 }
 
 td p:first-child {
     font-weight: bold;
 }
+
+@media screen and (max-width: 700px) {
+
+    main h1 {
+        font-size: 1.5em;
+    }
+
+    main h2 {
+        font-size: 1.5em;
+    }
+
+    .Bachelor-program tr {
+        flex-direction: column;
+        gap: 3vw;
+    }
+
+    .Bachelor-program td {
+        border-left-style: none;
+        border-bottom-style: solid;
+    }
+}
+
+/* End of "Bachelor-program" table */
 
 section {
     display: flex;
@@ -241,9 +265,12 @@ section td {
 }
 
 
-/* Slutt */
+/* Slutt på "Studiets oppbygging" */
+
+/* Styling for "Teknologi og design" */
 
 .teknologiogdesign{
+    transform: scale(0.95);
     background-color: var(--OsloMet-gul);
     display: flex;
     flex-direction: row;
@@ -255,7 +282,7 @@ section td {
 .teknologiogdesign div {
     display: flex;
     flex-direction: column;
-    text-align: start;  
+    text-align: start;
     padding: 2em;
 }
 
@@ -297,29 +324,62 @@ section td {
     }
 }
 
+/* Slutt på "Teknologi og design" */
 
-#studenthistorier{
-    margin-top: 4%; 
+.studenthistorier {
     background-color: var(--OsloMet-gul);
-    width: 40%;
-    padding: 1%;
-    padding-right: 2%;
-    font-size: 1.5em;
-    font-weight: bold;
-    transition: background-color 0.4s ease-in-out;
-    margin-bottom: 20vh;
-    
-}
 
-#studenthistorier:hover{
-    background-color: var(--OsloMet-gul);
-}
+    margin-top: 3em;
+    margin-bottom: 8em;
 
-#studenthistorierknapp{
+    cursor: pointer;
+
+    width: 30em;
+    height: 12vh;
+
+    justify-self: center;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
 }
+
+.studenthistorier p {
+    padding: 1em;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.Overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    transition: left 300ms;
+}
+
+.studenthistorier:hover .Overlay {
+    left: 0;
+    margin-left: 0;
+    transition: left 300ms;
+}
+
+@media  screen and (max-width: 600px) {
+    .studenthistorier {
+        width: 15em;
+        height: 12vh;
+    }
+
+    .studenthistorier p {
+        font-size: 1rem;
+    }
+}
+
 /* End of the main content */
 
 /* Start of the footer */
@@ -340,7 +400,7 @@ footer{
 
 .footeroverskrift{
     font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
-    font-size: 2.5vw; 
+    font-size: 2.5vw;
 }
 
 #footerknapp{
