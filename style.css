@@ -9,6 +9,9 @@ body {
     background-color: white;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
 
 /* Start of the Navigation bar */
 
@@ -270,7 +273,6 @@ section td {
 /* Styling for "Teknologi og design" */
 
 .teknologiogdesign{
-    transform: scale(0.95);
     background-color: var(--OsloMet-gul);
     display: flex;
     flex-direction: row;
@@ -325,10 +327,11 @@ section td {
 }
 
 /* Slutt på "Teknologi og design" */
-
 .studenthistorier {
     background-color: var(--OsloMet-gul);
 
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 3em;
     margin-bottom: 8em;
 
@@ -336,8 +339,6 @@ section td {
 
     width: 30em;
     height: 12vh;
-
-    justify-self: center;
 
     display: flex;
     flex-direction: row;
