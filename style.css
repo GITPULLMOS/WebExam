@@ -415,38 +415,31 @@ a {
 
   @media screen and (max-width: 500px){
     .footeroverskrift{
-        font-size: 2.4vh;
+        font-size: 1.2rem;
         margin-left: 5vw;
+    }
+    #footerinfo{
+        margin-left: -10vw;
+        flex-direction: column;
     }
     #liste{
         margin-left: 10%;
     }
     #footerknapp{
-        font-size: 2.5vw;
+        font-size: 1rem;
         margin-left: 5vw;
+        margin-bottom: 3vw;
+        width: 8rem;
     }
     #footertop{
         justify-content: start;
         flex-direction: column;
-        height: 40vw;
         align-items: normal;
+        
     }
 }
 
 @media screen and (max-width: 800px){
-    #medier li{
-    margin-left: -390%;
-    }
-    #medier li:first-child{
-        margin-top: 310%;
-    }
-    #medier li:nth-child(3),
-    #medier li:nth-child(4){
-        margin-left: -200%;
-    }
-    #medier li:nth-child(3){
-        margin-top: -109%;
-    }
     footer{
         height: 39rem;
     }
