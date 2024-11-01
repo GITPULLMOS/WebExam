@@ -387,8 +387,10 @@ section td {
 footer{
     background-color: var(--OsloMet-gul);
     height: fit-content;
+    min-height:30em;
     position: relative;
     z-index: 0;
+    margin-bottom: 0;
 }
 
 #footertop{
