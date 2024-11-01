@@ -480,11 +480,11 @@ a {
         margin-left: 5vw;
     }
     #footerinfo{
-        margin-left: -10vw;
+        margin-left: -3vw;
         flex-direction: column;
     }
     #liste{
-        margin-left: 2%;
+        margin-left: 3vw;
     }
     #footerknapp{
         font-size: 1rem;
@@ -502,7 +502,7 @@ a {
 
 @media screen and (max-width: 800px){
     footer{
-        height: 50rem;
+        height: 58rem;
     }
   }
 
