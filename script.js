@@ -75,7 +75,7 @@ function openInfo(ButtonId) {
     })
 
     InfoButtons.forEach(buttons => {
-        buttons.style.backgroundColor = "white"
+        buttons.style.backgroundColor = "var(--OsloMet-gul)"
     })
 
     // shows current information
@@ -85,7 +85,7 @@ function openInfo(ButtonId) {
     if (activeButton === ButtonId) {
         //closes the information if the button is pressed twice
          activeButton = null
-         currentButton.style.backgroundColor = "white"
+         currentButton.style.backgroundColor = "var(--OsloMet-gul)"
     } else {
         currentInfo.style.display = "flex"
         activeButton = ButtonId //sets the current button as active
@@ -106,6 +106,10 @@ function openMoreInfo(ButtonId) {
         section.style.display = "none"
     })
 
+    InfoButtons.forEach(buttons => {
+        buttons.style.fontWeight = "normal"
+    })
+
     // shows current information
     var currentInfo = document.getElementById('moreInfo-' + ButtonId)
     var currentButton = document.getElementById('moreInfoButton-' + ButtonId)
@@ -113,8 +117,10 @@ function openMoreInfo(ButtonId) {
     if (activeMoreInfoButton === ButtonId) {
         //closes the information if the button is pressed twice
          activeMoreInfoButton = null
+         currentButton.style.fontWeight = "normal"
     } else {
         currentInfo.style.display = "flex"
         activeMoreInfoButton = ButtonId //sets the current button as active
+        currentButton.style.fontWeight = "bold"
     }
 }
