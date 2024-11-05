@@ -458,7 +458,6 @@ footer{
 
 #footerinfo{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     margin-right: 10vw;
 }
@@ -522,7 +521,7 @@ a {
     }
     #footerinfo{
         margin-left: -3vw;
-        /* flex-direction: column; */
+        flex-direction: column;
     }
     #liste{
         margin-left: -0.5vw;
@@ -540,11 +539,11 @@ a {
         
     }
 }
-    /* @media screen and (max-width: 700px){
+     @media screen and (max-width: 700px){
     #footerinfo div:nth-child(){
         margin-left: -3vw;
         flex-direction: column;
     }
-} */
+}
 
   /* End of footer */
