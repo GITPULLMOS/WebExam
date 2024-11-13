@@ -427,6 +427,23 @@ menu {
     margin: 0;
 }
 
+.ActivityMain h1 {
+    color: lightgray;
+    background-image: url("../Images/banner.jpg");
+    /* Bilde fra https://vi.wikivoyage.org/wiki/Kuwait */
+    background-size: cover;
+    margin: 0;
+    padding: 1em 0 1em 0;
+}
+
+.ActivityMain article {
+    margin: 0 10em 0 10em;
+}
+
+.ActivityMain p {
+    margin: 1em 10em 1em 10em;
+}
+
 /* End of activity page */
 
 
