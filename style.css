@@ -423,7 +423,9 @@ menu {
 
 /* Start of activity-page */
 
-
+.ActivityMain {
+    margin: 0;
+}
 
 /* End of activity page */
 
