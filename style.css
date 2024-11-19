@@ -436,12 +436,44 @@ menu {
     padding: 1em 0 1em 0;
 }
 
+.ActivityMain section {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
 .ActivityMain article {
-    margin: 0 10em 0 10em;
+    position: absolute;
+    overflow: hidden;
+    width: 100vw;
+    left: 100%;
+}
+
+#sport-1 {
+    left: 0%;
 }
 
 .ActivityMain p {
     margin: 1em 10em 1em 10em;
+}
+
+.pilbotons {
+    margin-top: -500px;
+    margin-bottom: 25%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pilbotons img {
+    cursor: pointer;
+}
+
+.pilbotons img:first-child {
+    transform: rotate(180deg);
 }
 
 /* End of activity page */

@@ -124,3 +124,45 @@ function openMoreInfo(ButtonId) {
         currentButton.style.fontWeight = "bold"
     }
 }
+
+// let sportNumber = 1
+// function changeSport(arrow) {    
+//     var currentSport = document.getElementById("sport-"+sportNumber)
+//     sportNumber++
+//     var nextSport = document.getElementById('sport-'+sportNumber)
+//     var previousSport = currentSport
+    
+//     if (arrow === "rightArrow") {
+//         currentSport.style.left = '-100%'
+//         nextSport.style.left = '0%'
+//     } else if (arrow === "leftArrow") {
+//         currentSport.style.left = '100%'
+//         previousSport.style.left = '0%'
+//     }
+//     currentSport = nextSport
+// }
+
+let sportNumber = 1; // Tracks the current sport
+const totalSports = 4; // Total number of sports (update this as needed)
+
+function changeSport(arrow) {
+  const currentSport = document.getElementById("sport-" + sportNumber);
+
+  // Determine the next sport number
+  if (arrow === "rightArrow") {
+    sportNumber = (sportNumber % totalSports) + 1; // Cycle to the next sport (wrap around if at the last sport)
+  } else if (arrow === "leftArrow") {
+    sportNumber = (sportNumber - 1 + totalSports - 1) % totalSports + 1; // Cycle to the previous sport (wrap around if at the first sport)
+  }
+
+  const nextSport = document.getElementById("sport-" + sportNumber);
+
+  // Apply sliding animation based on the direction
+  if (arrow === "rightArrow") {
+    currentSport.style.left = "-100%"; // Slide current sport to the left
+    nextSport.style.left = "0%"; // Bring the next sport into view
+  } else if (arrow === "leftArrow") {
+    currentSport.style.left = "100%"; // Slide current sport to the right
+    nextSport.style.left = "0%"; // Bring the previous sport into view
+  }
+}
