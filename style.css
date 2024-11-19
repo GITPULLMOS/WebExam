@@ -425,6 +425,7 @@ menu {
 
 .ActivityMain {
     margin: 0;
+    overflow: hidden;
 }
 
 .ActivityMain h1 {
@@ -448,11 +449,11 @@ menu {
     position: absolute;
     overflow: hidden;
     width: 100vw;
-    left: 100%;
+    transition: left 0.5s ease;
 }
 
-#sport-1 {
-    left: 0%;
+#sport-2, #sport-3, #sport-4 {
+    display: none;
 }
 
 .ActivityMain p {

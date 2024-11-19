@@ -1,4 +1,3 @@
-
  
  //variable that controls whether the pop-up menu is displayed or not
  let displayUnderMenu = false
@@ -142,27 +141,62 @@ function openMoreInfo(ButtonId) {
 //     currentSport = nextSport
 // }
 
-let sportNumber = 1; // Tracks the current sport
-const totalSports = 4; // Total number of sports (update this as needed)
+let sportNumber = 1 // Tracks the current sport
+const totalSports = 4 // Total number of sports (update this as needed)
 
 function changeSport(arrow) {
-  const currentSport = document.getElementById("sport-" + sportNumber);
+  const currentSport = document.getElementById("sport-" + sportNumber)
 
   // Determine the next sport number
   if (arrow === "rightArrow") {
-    sportNumber = (sportNumber % totalSports) + 1; // Cycle to the next sport (wrap around if at the last sport)
+    sportNumber = (sportNumber % totalSports) + 1 // Cycle to the next sport
   } else if (arrow === "leftArrow") {
-    sportNumber = (sportNumber - 1 + totalSports - 1) % totalSports + 1; // Cycle to the previous sport (wrap around if at the first sport)
+    sportNumber = (sportNumber - 1 + totalSports - 1) % totalSports + 1 // Cycle to the previous sport
   }
 
-  const nextSport = document.getElementById("sport-" + sportNumber);
+  const nextSport = document.getElementById("sport-" + sportNumber)
 
-  // Apply sliding animation based on the direction
-  if (arrow === "rightArrow") {
-    currentSport.style.left = "-100%"; // Slide current sport to the left
-    nextSport.style.left = "0%"; // Bring the next sport into view
-  } else if (arrow === "leftArrow") {
-    currentSport.style.left = "100%"; // Slide current sport to the right
-    nextSport.style.left = "0%"; // Bring the previous sport into view
-  }
+  // Prepare the next sport for sliding in
+  nextSport.style.display = "block" // Ensure it's visible before animation
+  nextSport.style.left = arrow === "rightArrow" ? "100%" : "-100%" // Position off-screen based on direction
+
+  // Trigger sliding animation
+  setTimeout(() => {
+    currentSport.style.left = arrow === "rightArrow" ? "-100%" : "100%" // Slide current sport out
+    nextSport.style.left = "0%" // Slide next sport into view
+
+    // Wait for animation to complete before hiding the current sport
+    setTimeout(() => {
+      currentSport.style.display = "none" // Hide the current sport after sliding out
+    }, 500) // Match this to the CSS transition duration (0.5s)
+  },0)
 }
+
+// function changeSport(arrow) {
+//   const currentSport = document.getElementById("sport-" + sportNumber)
+
+//   // Determine the next sport number
+//   if (arrow === "rightArrow") {
+//     sportNumber = (sportNumber % totalSports) + 1 // Cycle to the next sport (wrap around if at the last sport)
+//   } else if (arrow === "leftArrow") {
+//     sportNumber = (sportNumber - 1 + totalSports - 1) % totalSports + 1 // Cycle to the previous sport (wrap around if at the first sport)
+//   }
+
+//   const nextSport = document.getElementById("sport-" + sportNumber)
+
+//   // Apply sliding animation based on the direction
+//   if (arrow === "rightArrow") {
+//     // Slide current sport to the left and displays it
+//     currentSport.style.left = "-100%" 
+//     currentSport.style.display = "none"
+//     nextSport.style.left = "0%" // Bring the next sport into view
+//     nextSport.style.display = "block"
+//   } else if (arrow === "leftArrow") {
+//     currentSport.style.left = "100%" // Slide current sport to the right
+//     currentSport.style.display = "none"
+//     nextSport.style.left = "0%" // Bring the previous sport into view
+//     nextSport.style.display = "block"
+//   }
+// }
+
+
