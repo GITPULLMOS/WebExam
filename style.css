@@ -428,6 +428,9 @@ menu {
 /* Start of activity-page */
 
 .ActivityMain {
+    font-family: Arial, sans-serif;
+    background-color: rgb(244, 237, 225);
+    line-height: 1.6;
     margin: 0;
     overflow: hidden;
     width: 100%;
@@ -439,6 +442,7 @@ menu {
     background-image: url("../Images/banner.jpg");
     /* Bilde fra https://vi.wikivoyage.org/wiki/Kuwait */
     background-size: cover;
+    font-size: 2.5em;
     margin: 0;
     padding: 1em 0 1em 0;
 }
@@ -460,6 +464,12 @@ menu {
     transition: left 0.5s ease;
 }
 
+.ActivityMain article h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
 #sport-2, #sport-3, #sport-4 {
     display: none;
     width: 100vw;
@@ -471,14 +481,25 @@ menu {
     margin: 0 auto;
     text-align: center;
     padding-top: 1em;
+    color: #333;
 }
 
 .ActivityMain img {
     height: 18em;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1em;
 }
 
 .ActivityMain ul {
     padding: 0;
+    color: #333;
+}
+
+.ActivityMain a {
+    color: #333;
+    border-bottom: 2px solid #333;
 }
 
 .pilbotons {
