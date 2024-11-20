@@ -477,6 +477,10 @@ menu {
     height: 18em;
 }
 
+.ActivityMain ul {
+    padding: 0;
+}
+
 .pilbotons {
     position: relative;
     z-index: 2;
