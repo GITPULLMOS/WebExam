@@ -448,7 +448,7 @@ menu {
     display: flex;
     flex-direction: row;
     width: 100em;
-    height: 50rem;
+    height: 40rem;
     padding: 0;
 }
 
@@ -462,10 +462,15 @@ menu {
 
 #sport-2, #sport-3, #sport-4 {
     display: none;
+    width: 100vw;
+    min-height: 100%;
 }
 
 .ActivityMain p {
-    margin: 1em 10em 1em 10em;
+    width: 45em;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1em;
 }
 
 .ActivityMain img {
