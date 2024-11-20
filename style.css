@@ -524,6 +524,74 @@ menu {
 
 /* End of activity page */
 
+/* Start of Github page */
+
+.githubinfo{
+    background-color: var(--OsloMet-gul);
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    height: 20em;
+    padding: 0;
+}
+
+.githubinfo div {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 2em;
+}
+
+.githubinfo p{
+    font-size: 1.2em;
+}
+
+.githubinfo p:first-child{
+    font-weight: bold;
+    text-decoration: underline;
+    width: 100%;
+}
+
+.githubinfo p:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: -0.5em;
+}
+
+.githubinfo img {
+    object-fit: fill;
+    height: 100%;
+    width: 45vw;
+}
+
+@media screen and (max-width: 750px) {
+    .githubinfo {
+        height: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .githubinfo {
+        font-size: 0.8em;
+    }
+
+    .githubinfo img {
+        width: 100%;
+        min-height: 30vh;
+    }
+
+    #info-5 ul {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 50vw;
+    }
+
+    #info-5 li {
+        width: 100%;
+        padding-bottom: 1em;
+    }
+}
+
+/* End of Github page */
 
 /* Start of the footer */
 footer{
