@@ -453,7 +453,7 @@ menu {
 }
 
 .ActivityMain article {
-    position: relative;
+    position: absolute;
     overflow: hidden;
     width: 100vw;
     min-height: 100%;
