@@ -215,7 +215,7 @@ section table {
     .wrapper {
         flex-direction: column;
     }
-    
+
     .InfoButton {
         height: 0.1em;
     }
@@ -606,7 +606,7 @@ a {
         justify-content: start;
         flex-direction: column;
         align-items: normal;
-        
+
     }
 }
      @media screen and (max-width: 700px){
