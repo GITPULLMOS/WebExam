@@ -172,31 +172,4 @@ function changeSport(arrow) {
   },0)
 }
 
-// function changeSport(arrow) {
-//   const currentSport = document.getElementById("sport-" + sportNumber)
-
-//   // Determine the next sport number
-//   if (arrow === "rightArrow") {
-//     sportNumber = (sportNumber % totalSports) + 1 // Cycle to the next sport (wrap around if at the last sport)
-//   } else if (arrow === "leftArrow") {
-//     sportNumber = (sportNumber - 1 + totalSports - 1) % totalSports + 1 // Cycle to the previous sport (wrap around if at the first sport)
-//   }
-
-//   const nextSport = document.getElementById("sport-" + sportNumber)
-
-//   // Apply sliding animation based on the direction
-//   if (arrow === "rightArrow") {
-//     // Slide current sport to the left and displays it
-//     currentSport.style.left = "-100%" 
-//     currentSport.style.display = "none"
-//     nextSport.style.left = "0%" // Bring the next sport into view
-//     nextSport.style.display = "block"
-//   } else if (arrow === "leftArrow") {
-//     currentSport.style.left = "100%" // Slide current sport to the right
-//     currentSport.style.display = "none"
-//     nextSport.style.left = "0%" // Bring the previous sport into view
-//     nextSport.style.display = "block"
-//   }
-// }
-
 
