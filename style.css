@@ -453,7 +453,7 @@ menu {
 }
 
 .ActivityMain article {
-    position: relative;
+    position: absolute;
     overflow: hidden;
     width: 100vw;
     min-height: 100%;
@@ -486,6 +486,8 @@ menu {
     z-index: 2;
     display: flex;
     justify-content: space-between;
+    margin-top: -30%;
+    margin-bottom: 50vh;
 }
 
 .pilbotons img {
