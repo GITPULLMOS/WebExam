@@ -448,6 +448,8 @@ menu {
 }
 
 .ActivityMain section {
+    margin-top: 5vh;
+    border-style: solid;
     overflow: hidden;
     display: flex;
     flex-direction: row;
