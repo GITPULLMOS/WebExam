@@ -447,8 +447,9 @@ menu {
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 50em;
+    width: 100em;
+    height: 50rem;
+    padding: 0;
 }
 
 .ActivityMain article {
@@ -457,7 +458,6 @@ menu {
     width: 100vw;
     min-height: 100%;
     transition: left 0.5s ease;
-    padding-bottom: 1em;
 }
 
 #sport-2, #sport-3, #sport-4 {
