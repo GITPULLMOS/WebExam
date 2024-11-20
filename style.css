@@ -2,6 +2,10 @@
     --OsloMet-gul: rgb(255,213,0);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
@@ -426,6 +430,8 @@ menu {
 .ActivityMain {
     margin: 0;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
 .ActivityMain h1 {
@@ -442,14 +448,16 @@ menu {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100vh;
+    height: 50rem;
 }
 
 .ActivityMain article {
-    position: absolute;
+    position: relative;
     overflow: hidden;
     width: 100vw;
+    min-height: 100%;
     transition: left 0.5s ease;
+    padding-bottom: 1em;
 }
 
 #sport-2, #sport-3, #sport-4 {
@@ -460,9 +468,11 @@ menu {
     margin: 1em 10em 1em 10em;
 }
 
+.ActivityMain img {
+    height: 18em;
+}
+
 .pilbotons {
-    margin-top: -500px;
-    margin-bottom: 25%;
     position: relative;
     z-index: 2;
     display: flex;
@@ -471,6 +481,7 @@ menu {
 
 .pilbotons img {
     cursor: pointer;
+    height: 5em;
 }
 
 .pilbotons img:first-child {
