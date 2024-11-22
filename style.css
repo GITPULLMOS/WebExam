@@ -610,9 +610,11 @@ menu {
 
 .accessibility article {
     display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--OsloMet-gul);
     margin-bottom: 1em;
-    padding: 1em;
+    padding: 0.5em;
 }
 
 .accessibility summary {
