@@ -598,6 +598,50 @@ menu {
 
 /* End of Github page */
 
+/* Start of Accessibility page */
+
+.accessibility {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.accessibility article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--OsloMet-gul);
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+
+.accessibility summary {
+    display: flex;
+    flex-direction: column;
+    margin: 0em 1em 0em 1em;
+}
+
+.accessibility p {
+    max-width: 30rem;
+    margin: 0;
+}
+
+.accessibility img {
+    height: 12em;
+    width: 30em;
+}
+
+@media screen and (max-width: 1100px){
+    .accessibility article {
+        flex-direction: column;
+    }
+}
+
+
+/* End of Accessibility page */
+
 /* Start of the footer */
 footer{
     background-color: var(--OsloMet-gul);
