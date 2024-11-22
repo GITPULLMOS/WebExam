@@ -31,7 +31,7 @@
     <main>
         <h1>Matematisk modellering og datavitenskap – ingeniør</h1>
         <h2>Bachelor-program</h2>
-
+        <!-- Table under headline. Displays general information about the study program -->
         <table class="Bachelor-program">
             <tr>
                 <td>
@@ -67,7 +67,7 @@
                 </td>
             </tr>
         </table>
-        
+        <!-- 3x3 table of buttons, serves as the menu for all information displayed on the main page -->
         <section>
             <h3>Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige oppgaver.</h3>
             <table>
@@ -87,7 +87,10 @@
                     <td class="InfoButton" id="button-9" onclick="openInfo('9')">Utveksling</td>
                 </tr>
             </table>
-
+            <!-- 
+            InfoSection are the sections with information that's displayed when a button is pushed.
+            Each InfoSection has its own id, from 1 - 9, depending on the button pushed. 
+            -->
             <article class="InfoSection" id="info-1">
                 <p>
                     Informasjon om program, timeplaner, pensum, fadderuker og mye mer finner du på studiestartsiden for matematisk modellering og datavitenskap - ingeniør (student.oslomet.no).
@@ -153,7 +156,11 @@
                     Første året velger du hvilken av disse spesialiseringene du vil ta.
                 </p>
                 
-                <!-- Knappene som er inne i en knapp, skal vise utdypende info om hva du lærer -->
+                <!-- 
+                Buttons in info-4, serves to display each year separatly
+                to avoid long expansions on the main page.
+                Like InfoSection, moreInfoSection work the same, with an equivalent moreInfo-(1-9).
+                -->
                 <p class="moreInfoButton" id="moreInfoButton-1" onclick="openMoreInfo('1')">Statistiske og datadrevne metoder</p>
                 <p class="moreInfoButton" id="moreInfoButton-2" onclick="openMoreInfo('2')">Vitenskapelige beregninger</p>
                 <p class="moreInfoButton" id="moreInfoButton-3" onclick="openMoreInfo('3')">Matematikk og fysikk</p>
