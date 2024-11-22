@@ -223,13 +223,14 @@ section table {
 
 .InfoSection {
     display: none;
-    border: 0.15em solid #e0c400;
+    border: 0.15em solid var(--OsloMet-gul);
+    border-radius: 1em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 60vw;
     min-height: 40vh;
-    background-color: var(--OsloMet-gul);
+    background-color: rgb(234, 234, 234);
 }
 
 .InfoSection p {
@@ -250,7 +251,7 @@ section table {
     justify-content: center;
     align-items: center;
     width: 50vw;
-    background-color: var(--OsloMet-gul);
+    background-color: rgb(234, 234, 234);
 }
 
 .moreInfoButton {
