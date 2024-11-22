@@ -531,6 +531,24 @@ menu {
     background-color: rgb(113, 111, 111);
 }
 
+.historikk{
+    border: 1px solid;
+    max-width: 81vw;
+    background-color: var(--OsloMet-gul);
+    padding: 3px;
+    margin-left: 4.5vw;
+}
+
+.historikkbilder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.historikkbilder img{
+    width: 40vw;
+}
+
 .githubinfo{
     background-color: var(--OsloMet-gul);
     display: flex;
@@ -567,6 +585,14 @@ menu {
     object-fit: fill;
     height: 100%;
     width: 45vw;
+}
+
+.prosandcons{
+    background-color: var(--OsloMet-gul);
+    text-align: left;
+    max-width: 80vw;
+    margin-left: 5vw;
+    padding: 1vw;
 }
 
 @media screen and (max-width: 750px) {
