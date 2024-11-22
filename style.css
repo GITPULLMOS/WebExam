@@ -528,7 +528,17 @@ menu {
 /* Start of Github page */
 
 .GithubBody {
-    background-color: rgb(113, 111, 111);
+    background-color: rgb(142, 140, 140);
+}
+
+.GithubMain h1{
+    font-size: 4em;
+    margin-top: -2vw;
+}
+
+.GithubMain h3{
+    font-size: 2em;
+    font-weight: 100;
 }
 
 .historikk{
@@ -539,6 +549,12 @@ menu {
     margin-left: 4.5vw;
 }
 
+.historikk p{
+    text-align: left;
+    margin-left: 4px;
+    font-size: 1em;
+}
+
 .historikkbilder{
     display: flex;
     flex-direction: row;
@@ -547,6 +563,7 @@ menu {
 
 .historikkbilder img{
     width: 40vw;
+    padding: 2px;
 }
 
 .githubinfo{
@@ -596,6 +613,14 @@ menu {
 }
 
 @media screen and (max-width: 750px) {
+    .historikkbilder{
+        flex-direction: column;
+    }
+
+    .historikkbilder img{
+        width: 80vw;
+    }
+
     .githubinfo {
         height: 100%;
         flex-direction: column-reverse;
@@ -678,7 +703,7 @@ footer{
     margin-bottom: 0;
 }
 
-#footertop{
+.footertop{
     border-bottom: 1px solid black;
     display: flex;
     flex-direction: row;
@@ -691,7 +716,7 @@ footer{
     font-size: 2.5vw;
 }
 
-#footerknapp{
+.footerknapp{
     background-color: black;
     font-weight: bold;
     color: white;
@@ -703,7 +728,7 @@ footer{
     cursor: pointer;
 }
 
-#footerinfo{
+.footerinfo{
     display: flex;
     justify-content: space-around;
     margin-right: 10vw;
@@ -717,7 +742,7 @@ ul{
     list-style: none;
 }
 
-#liste{
+.liste{
     font-weight: bold;
     font-size: 0.8em;
     margin-left: 10vw;
@@ -726,7 +751,7 @@ ul{
     flex-direction: column;
 }
 
-#liste p{
+.liste p{
     margin-top: 0px;
     display: inline-block;
 }
@@ -738,20 +763,20 @@ ul{
     cursor: pointer;
 }
 
-#medier li{
+.medier li{
     margin-top: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-#medier img {
+.medier img {
     height: 2em;
     margin-right: .5em;
 }
 
 
-#logo{
+.logo{
     width: 5%;
     margin-left: 0%;
 }
@@ -769,32 +794,32 @@ a {
         font-size: 1.2rem;
         margin-left: 5vw;
     }
-    #footerinfo{
+    .footerinfo{
         margin-left: -3vw;
         flex-direction: column;
     }
-    #liste{
+    .liste{
         margin-left: -0.5vw;
     }
-    #footerknapp{
+    .footerknapp{
         font-size: 1rem;
         margin-left: 5vw;
         margin-bottom: 3vw;
         width: 8rem;
     }
-    #footertop{
+    .footertop{
         justify-content: start;
         flex-direction: column;
         align-items: normal;
 
     }
-    #medier{
+    .medier{
         margin-left: 55vw;
         margin-top: -19rem;
     }
 }
      @media screen and (max-width: 700px){
-    #footerinfo div:nth-child(){
+    .footerinfo div:nth-child(){
         margin-left: -3vw;
         flex-direction: column;
     }
