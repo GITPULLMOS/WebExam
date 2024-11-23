@@ -41,59 +41,107 @@
                 drivkraft i ekstremsport er søken etter de grensesprengende og nervepirrende 
                 opplevelser hvor man får adrenalin-kick.</p>
                 <!--https://snl.no/ekstremsport-->
-            <section>
-                <!-- Each sport has its own article and id ranging from 1 to 4 -->
-                <article id="sport-1">
-                    <h2>Vingedrakt flyvning</h2>
-                    <!-- Bilde fra https://www.flickr.com/photos/picturecorrect/49826750198/-->
-                    <p>Wingsuit-flyging (eller wingsuiting) er sporten der man hopper i fallskjerm med en spesialdesignet drakt med netting mellom armer og ben, kalt wingsuit. Denne drakten gir en større overflate som øker løft, noe som gjør det mulig å forlenge lufttiden ved å gli gjennom luften i stedet for å falle fritt.<a href="">link til noe vingedraktrelatert</a></p>
-                </article>
-                <article id="sport-2">
-                    <h2>Rafting</h2>
-                    <!-- Bilde fra https://flickr.com/photos/nataliedowne/2340993237-->
-                    <p>
-                        Rafting er en aktivitet som går ut på å navigere en flåte ned en elv. 
-                        Rafting utføres gjerne i stryk og elver hvor vannet renner raskt. 
-                        Det benyttes en åre til padling eller til å styre flåten med.
-                        Vanskeligheten på elva rangeres på en skala fra 1 til 6:
-                    </p>
-                    <ul>
-                        <li>Grad 1: Flatt vann.</li>
-                        <li>Grad 2: Vann i bevegelse. Få eller ingen hindringer.</li>
-                        <li>Grad 3: Sterk strøm med hindringer og stryk. Manøvrering er nødvendig.</li>
-                        <li>
-                            Grad 4: Sterk strøm med store stryk og vanskelige passasjer. 
-                            Manøvrering er vanskeleg, risiko for flip (båten går rundt).
-                        </li>
-                        <li>Grad 5: Ekstremt vanskelig og kun for spesielt interesserte.</li>
-                        <li>Grad 6: Umulig å rafte.</li>
-                    </ul>
-                    <!--https://no.wikipedia.org/wiki/Rafting-->
-                    <a target="_blank" href="https://www.visitnorway.no/aktiviteter-og-attraksjoner/utendorsaktiviteter/rafting/">Prøv rafting selv!</a>
-                </article>
-                <article id="sport-3">
-                    <h2>Friklatring</h2>
-                    <!-- Bilde fra https://www.flickr.com/photos/s_mestdagh/3360653671/-->
-                    <p>Friklatring defineres som «klatring på fjell uten hjelpemidler som bolter, store tau eller sikringsutstyr». Det regnes som en av de farligste sportene i verden, og ulykker i friklatring fører til rundt 30 dødsfall hvert år – et betydelig antall med tanke på hvor få som prøver seg på slike oppstigninger.</p>
-                    <a href="">link til noe klatrerelatert</a>
-                </article>
-                <article id="sport-4">
-                    <h2>Cave crawling</h2>
-                    <!-- Bilde fra https://www.flickr.com/photos/drainrat/14249101254/-->
-                    <p>
-                        Cave crawling, eller grottevandring, er en ekstremsport som involverer utforskning av mørke, trange og ofte farlige underjordiske passasjer.
-                        Kjent for sine unike fysiske og mentale utfordringer, kommer sporten også med betydelige risikoer, slik det ble tydeliggjort av den tragiske hendelsen i 2009, <a href="https://cavehaven.com/nutty-putty-cave-accident/" target="_blank">"The Nutty Putty Cave incident"</a> i Utah.
-                        Her ble 26 år gamle John Jones sittende fast i en utrolig trang tunnel, kjent som "The Birth Canal," mens han utforsket med venner.
-                        Til tross for en 24-timers redningsaksjon, kunne ikke Jones befris og døde til slutt som følge av komplikasjoner fra sin posisjon.
-                        Denne tragiske hendelsen, som førte til permanent stengning av Nutty Putty Cave, er en sterk påminnelse om de potensielle farene ved sporten og understreker viktigheten av forberedelse og forsiktighet i slike ekstreme miljøer.
-                    </p>
-                </article>
-            </section>
-            <!-- Button images to controll the slide-show -->
-            <div class="pilbotons">
+
+            <div class="slideshow">
                 <img src="../Images/arrow.png" alt="left arrow" onclick="changeSport('leftArrow')">
+                <section>
+                    <!-- Each sport has its own article and id ranging from 1 to 4 -->
+                    <article id="sport-1">
+                        <h2>Vingedrakt flyvning</h2>
+                        <!-- Bilde fra https://www.flickr.com/photos/picturecorrect/49826750198/-->
+                        <p>Wingsuit-flyging (eller wingsuiting) er sporten der man hopper i fallskjerm med en spesialdesignet drakt med netting mellom armer og ben, kalt wingsuit. Denne drakten gir en større overflate som øker løft, noe som gjør det mulig å forlenge lufttiden ved å gli gjennom luften i stedet for å falle fritt.<a href="">link til noe vingedraktrelatert</a></p>
+                    </article>
+                    <article id="sport-2">
+                        <h2>Rafting</h2>
+                        <!-- Bilde fra https://flickr.com/photos/nataliedowne/2340993237-->
+                        <p>
+                            Rafting er en aktivitet som går ut på å navigere en flåte ned en elv. 
+                            Rafting utføres gjerne i stryk og elver hvor vannet renner raskt. 
+                            Det benyttes en åre til padling eller til å styre flåten med.
+                            Vanskeligheten på elva rangeres på en skala fra 1 til 6:
+                        </p>
+                        <ul>
+                            <li>Grad 1: Flatt vann.</li>
+                            <li>Grad 2: Vann i bevegelse. Få eller ingen hindringer.</li>
+                            <li>Grad 3: Sterk strøm med hindringer og stryk. Manøvrering er nødvendig.</li>
+                            <li>
+                                Grad 4: Sterk strøm med store stryk og vanskelige passasjer. 
+                                Manøvrering er vanskeleg, risiko for flip (båten går rundt).
+                            </li>
+                            <li>Grad 5: Ekstremt vanskelig og kun for spesielt interesserte.</li>
+                            <li>Grad 6: Umulig å rafte.</li>
+                        </ul>
+                        <!--https://no.wikipedia.org/wiki/Rafting-->
+                        <a target="_blank" href="https://www.visitnorway.no/aktiviteter-og-attraksjoner/utendorsaktiviteter/rafting/">Prøv rafting selv!</a>
+                    </article>
+                    <article id="sport-3">
+                        <h2>Friklatring</h2>
+                        <!-- Bilde fra https://www.flickr.com/photos/s_mestdagh/3360653671/-->
+                        <p>Friklatring defineres som «klatring på fjell uten hjelpemidler som bolter, store tau eller sikringsutstyr». Det regnes som en av de farligste sportene i verden, og ulykker i friklatring fører til rundt 30 dødsfall hvert år – et betydelig antall med tanke på hvor få som prøver seg på slike oppstigninger.</p>
+                        <a href="">link til noe klatrerelatert</a>
+                    </article>
+                    <article id="sport-4">
+                        <h2>Cave crawling</h2>
+                        <!-- Bilde fra https://www.flickr.com/photos/drainrat/14249101254/-->
+                        <p>
+                            Cave crawling, eller grottevandring, er en ekstremsport som involverer utforskning av mørke, trange og ofte farlige underjordiske passasjer.
+                            Kjent for sine unike fysiske og mentale utfordringer, kommer sporten også med betydelige risikoer, slik det ble tydeliggjort av den tragiske hendelsen i 2009, <a href="https://cavehaven.com/nutty-putty-cave-accident/" target="_blank">"The Nutty Putty Cave incident"</a> i Utah.
+                            Her ble 26 år gamle John Jones sittende fast i en utrolig trang tunnel, kjent som "The Birth Canal," mens han utforsket med venner.
+                            Til tross for en 24-timers redningsaksjon, kunne ikke Jones befris og døde til slutt som følge av komplikasjoner fra sin posisjon.
+                            Denne tragiske hendelsen, som førte til permanent stengning av Nutty Putty Cave, er en sterk påminnelse om de potensielle farene ved sporten og understreker viktigheten av forberedelse og forsiktighet i slike ekstreme miljøer.
+                        </p>
+                    </article>
+                </section>
                 <img src="../Images/arrow.png" alt="right arrow" onclick="changeSport('rightArrow')">
             </div>
     </main>
+    <footer>
+        <div class="footertop">
+            <h1 class="footeroverskrift">Hold deg oppdatert på hva som skjer på Oslomet.</h1>
+            <div class="footerknapp">
+                <a href ="https://www.oslomet.no/nyhetsbrev">Abonner på vårt nyhetsbrev!</a>
+            </div>
+        </div>
+        <div class="footerinfo">
+            <div>
+                <ul>
+                <li><h2>OSLO METROPOLITAN UNIVERSITY <br> STORYBYUNIVERSITET</h2></li>
+                <li>Postboks 4, St. Olavs plass <br>
+                    0130 Oslo <br>
+                    Tlf.: 67 23 50 00
+                </li>
+                    <li>Kontakt oss</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="liste">
+                    <li>
+                        <a href="EnglishIndex.html">
+                            <p>English</p>
+                        </a>
+                    </li>
+                    <li><p>Alumni</p></li>
+                    <li><p>Ansatteoversikt</p></li>
+                    <li><p>Arrangementsoversikt</p></li>
+                    <li><p>For ansatte</p></li>
+                    <li><p>For studenter</p></li>
+                    <li><p>Ledige stillinger</p></li>
+                    <li><p>Personvernerklæring</p></li>
+                    <li><p>Pressekontakt</p></li>
+                    <li><p>Tilgjengelegheitserklæring</p></li>
+                    <li><p>Admin</p></li>
+                </ul>
+            </div>
+            <div class="medier">
+                <ul>
+                    <li><img src="../Images/icons8-facebook-50.png" alt="facebook-logo"><p>Facebook</p></li>
+                    <li><img src="../Images/icons8-x-50.png" alt="Twitter-logo"><p>(X) Twitter</p></li>
+                    <li><img src="../Images/icons8-linkedin-50.png" alt="LinkedIn-logo"><p>LinkedIn</p></li>
+                    <li><img src="../Images/icons8-instagram-50.png" alt="Instagram-logo"><p>Instagram</p></li>
+                    <!-- Iconer hentet fra https://icons8.com -->
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

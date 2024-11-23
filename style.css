@@ -308,9 +308,11 @@ menu {
     background-color: var(--OsloMet-gul);
     display: flex;
     flex-direction: row;
-    width: 90vw;
-    height: 20em;
+    justify-content: space-between;
+    width: 80em;
+    height: 25em;
     padding: 0;
+    margin: 0 auto;
 }
 
 .teknologiogdesign div {
@@ -339,7 +341,7 @@ menu {
 .teknologiogdesign img {
     object-fit: cover;
     height: 100%;
-    width: 45vw;
+    width: 40vw;
 }
 
 @media screen and (max-width: 750px) {
@@ -440,7 +442,7 @@ menu {
 
 .ActivityMain h1 {
     color: lightgray;
-    background-image: url("../Images/banner.jpg");
+    /* background-image: url("../Images/banner.jpg"); */
     /* Bilde fra https://vi.wikivoyage.org/wiki/Kuwait */
     background-size: cover;
     font-size: 2.5em;
@@ -448,25 +450,48 @@ menu {
     padding: 1em 0 1em 0;
 }
 
-.ActivityMain section {
+.ActivityMain .slideshow section {
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    height: 60em;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    height: 90vh;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid red;
 }
 
+.slideshow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slideshow img {
+    flex: 1;
+    position: relative;
+    z-index: 6;
+}
+
+.slideshow img:first-of-type {
+    transform: rotate(180deg);
+}
+
+
 .ActivityMain article {
+    height: 20em;
+    width: 50%;
     border-style: solid;
     position: absolute;
-    overflow: hidden;
-    width: 80vw;
-    min-height: 90vh;
-    transition: left 0.5s ease;
+    transition: transform 0.5s ease;
     background-repeat: no-repeat;
-    background-size: cover;
-    left: 10%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #sport-1 {
@@ -490,12 +515,11 @@ menu {
     color: #706d6d;
 }
 
-.ActivityMain article p, ul {
+.ActivityMain article p, .ActivityMain article ul {
     border-style: solid;
-    width: 30em;
-    background-color: rgba(216, 211, 211, 0.689);
-    margin-left: auto;
-    margin-right: auto;
+    font-weight: bold;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.689);
 }
 
 #sport-2, #sport-3, #sport-4 {
@@ -511,7 +535,6 @@ menu {
 }
 
 .ActivityMain img {
-    height: 18em;
     max-height: 100%;
     max-width: 100%;
     border-radius: 8px;
@@ -526,25 +549,6 @@ menu {
     color: #333;
     border-bottom: 2px solid #333;
 }
-
-.pilbotons {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    margin-top: -30%;
-    margin-bottom: 50vh;
-}
-
-.pilbotons img {
-    cursor: pointer;
-    height: 5em;
-}
-
-.pilbotons img:first-child {
-    transform: rotate(180deg);
-}
-
 /* End of activity page */
 
 /* Start of Github page */

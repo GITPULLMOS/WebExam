@@ -158,12 +158,12 @@ function changeSport(arrow) {
 
   // Prepare the next sport for sliding in
   nextSport.style.display = "block" // Ensure it's visible before animation
-  nextSport.style.left = arrow === "rightArrow" ? "100%" : "-100%" // Position off-screen based on direction
+  nextSport.style.transform = arrow === "rightArrow" ? "translateX(200%)" : "translateX(-200%)" // Position off-screen based on direction
 
   // Trigger sliding animation
   setTimeout(() => {
-    currentSport.style.left = arrow === "rightArrow" ? "-100%" : "100%" // Slide current sport out
-    nextSport.style.left = "10%" // Slide next sport into view
+    currentSport.style.transform = arrow === "rightArrow" ? "translateX(-200%)" : "translateX(200%)" // Position off-screen based on direction
+    nextSport.style.transform = "translateX(0)" // Slide next sport into view
 
     // Wait for animation to complete before hiding the current sport
     setTimeout(() => {
