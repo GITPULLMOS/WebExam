@@ -448,34 +448,57 @@ menu {
 }
 
 .ActivityMain section {
-    margin-top: 5vh;
-    border-style: solid;
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    width: 100em;
-    height: 45rem;
-    padding: 0;
+    height: 60em;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 .ActivityMain article {
+    border-style: solid;
     position: absolute;
     overflow: hidden;
-    width: 100vw;
-    min-height: 100%;
+    width: 80vw;
+    min-height: 90vh;
     transition: left 0.5s ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 10%;
+}
+
+#sport-1 {
+    background-image: url(Images/vingedrakt.jpg);
+}
+
+#sport-2 {
+    background-image: url(Images/rafting.jpg);
+}
+
+#sport-3 {
+    background-image: url(Images/friklatring2.jpg);
+}
+
+#sport-4 {
+    background-image: url(Images/cavecrawling.jpg);
 }
 
 .ActivityMain article h2 {
     font-size: 1.8em;
-    color: #333;
-    margin-bottom: 1em;
+    color: #706d6d;
+}
+
+.ActivityMain article p, ul {
+    border-style: solid;
+    width: 30em;
+    background-color: rgba(216, 211, 211, 0.689);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #sport-2, #sport-3, #sport-4 {
     display: none;
-    width: 100vw;
-    min-height: 100%;
 }
 
 .ActivityMain p {
@@ -495,7 +518,6 @@ menu {
 }
 
 .ActivityMain ul {
-    padding: 0;
     color: #333;
 }
 

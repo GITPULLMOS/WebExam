@@ -163,7 +163,7 @@ function changeSport(arrow) {
   // Trigger sliding animation
   setTimeout(() => {
     currentSport.style.left = arrow === "rightArrow" ? "-100%" : "100%" // Slide current sport out
-    nextSport.style.left = "0%" // Slide next sport into view
+    nextSport.style.left = "10%" // Slide next sport into view
 
     // Wait for animation to complete before hiding the current sport
     setTimeout(() => {
