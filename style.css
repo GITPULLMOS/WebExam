@@ -330,6 +330,7 @@ menu {
     align-items: start;
     padding: 0 0 1em 0;
     margin-right: 5em;
+    white-space: nowrap;
 }
 
 .container section:nth-child(2n+2) {
