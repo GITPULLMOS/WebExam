@@ -293,9 +293,9 @@ section table {
     border-bottom: 0.1em solid black;
     padding: 1em;
 }
-/* End of info section */
+/* ---------------- End of info section ------------------*/
 
-/* Styling for "Studiets oppbygging" */
+/*------------------ Styling for "Studiets oppbygging" ---------------------*/
 menu {
     margin: 0;
     padding: 0;
@@ -333,9 +333,9 @@ menu {
     padding: 0;
 }
 
-/* End of "Studiets oppbygging" */
+/* -----------------End of "Studiets oppbygging" --------------------*/
 
-/* Style "Andre interesser" */
+/* -----------------Style for "Andre interesser"-------------------- */
 .andreInteresser h2 {
     font-weight: bold;
 }
@@ -383,6 +383,7 @@ menu {
     transform: scale(1.1);
 }
 
+/* ---------------Scaling style for "Andre Interesser------------------ */
 @media screen and (max-width: 600px) {
     .container ul {
         width: 50vw;
