@@ -906,7 +906,7 @@ a {
 
   @media screen and (max-width: 650px){
     footer{
-        height: 40em;
+        height: 41.5em;
     }
     .footeroverskrift{
         font-size: 1.2rem;
@@ -917,7 +917,7 @@ a {
         flex-direction: column;
     }
     .liste{
-        margin-left: -0.5vw;
+        margin-left: -0.7vw;
     }
     .footerknapp{
         font-size: 1rem;
