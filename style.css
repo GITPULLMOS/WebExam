@@ -701,6 +701,7 @@ menu {
     width: 90vw;
     height: 20em;
     padding: 0;
+    margin: 10px;
 }
 
 .githubinfo div {
@@ -881,7 +882,7 @@ ul{
 .liste{
     font-weight: bold;
     font-size: 0.8em;
-    margin-left: 10vw;
+    margin-left: 8vw;
     width: 100%;
     display: flex;
     flex-direction: column;
