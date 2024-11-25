@@ -183,9 +183,10 @@ td p:first-child {
          font-size: 1.5em;  /*reduce heading sizes */
     }
 
+
     .Bachelor-program tr {
-        flex-direction: column;
-        gap: 3vw;
+        flex-direction: column; /* stack rows */
+        gap: 3vw; /* Reduce spacing */
     }
 
     .Bachelor-program td {
@@ -194,7 +195,7 @@ td p:first-child {
     }
 }
 
-/* End of "Bachelor-program" table */
+/* ------------------- End of "Bachelor-program" table ---------------------*/
 
 /* Start of info section */
 section {
