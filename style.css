@@ -18,6 +18,10 @@ body {
     width: 0;
 }
 
+a {
+    cursor: pointer;
+}
+
 /* Start of the Navigation bar */
 
 nav {
