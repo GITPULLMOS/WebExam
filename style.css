@@ -371,6 +371,25 @@ menu {
 .container img:hover {
     transform: scale(1.1);
 }
+
+@media screen and (max-width: 600px) {
+    .container p {
+        font-size: smaller;
+    }
+
+    .container img {
+        height: 2em;
+    }
+
+    .container section:nth-child(2n+1) {
+        margin-right: 1em;
+    }
+
+    .container section:nth-child(2n+2) {
+        margin-top: 2.5em;
+    }
+}
+
 /* End of "Andre interesser" */
 
 /* Styling for "Teknologi og design" */
@@ -442,7 +461,7 @@ menu {
     }
 }
 
-/* Slutt på "Teknologi og design" */
+/* End of "Teknologi og design" */
 .studenthistorier {
     background-color: var(--OsloMet-gul);
 
@@ -803,7 +822,7 @@ menu {
 }
 
 @media screen and (max-width: 1100px){
-    .accessibility article {
+    .accessibility article, .accessibility article picture {
         flex-direction: column;
     }
 }
