@@ -278,7 +278,7 @@ section table {
     justify-content: flex-start;
 }
 
-/* Section for more info, initially  */
+/* Section for more info, initially displayed as none until activated by script */
 .moreInfoSection {
     display: none;
     flex-direction: column;
