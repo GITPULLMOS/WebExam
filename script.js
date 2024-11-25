@@ -142,7 +142,7 @@ function openMoreInfo(ButtonId) {
 // }
 
 let sportNumber = 1 // Tracks the current sport
-const totalSports = 4 // Total number of sports (update this as needed)
+const totalSports = 5 // Total number of sports (update this as needed)
 
 function changeSport(arrow) {
   const currentSport = document.getElementById("sport-" + sportNumber)
