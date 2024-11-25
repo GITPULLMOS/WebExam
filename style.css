@@ -1,3 +1,21 @@
+/*
+List of contents:
+- General changes
+- Navigation bar
+- Main content
+-- "Bachelor-program" table
+-- info section
+-- "Studiets oppbygging"
+-- "Andre interesser"
+-- "Teknologi og design"
+- Activity
+- Github
+- Accessibility
+- Footer
+*/
+
+
+
 :root {
     --OsloMet-gul: rgb(255,213,0);
 }
@@ -16,6 +34,10 @@ body {
 
 ::-webkit-scrollbar {
     width: 0;
+}
+
+a {
+    cursor: pointer;
 }
 
 /* Start of the Navigation bar */
@@ -164,6 +186,7 @@ td p:first-child {
 
 /* End of "Bachelor-program" table */
 
+/* Start of info section */
 section {
     display: flex;
     flex-direction: column;
@@ -260,6 +283,7 @@ section table {
     border-bottom: 0.1em solid black;
     padding: 1em;
 }
+/* End of info section */
 
 /* Styling for "Studiets oppbygging" */
 menu {
@@ -299,9 +323,7 @@ menu {
     padding: 0;
 }
 
-
-
-/* Slutt på "Studiets oppbygging" */
+/* End of "Studiets oppbygging" */
 
 /* Style "Andre interesser" */
 .andreInteresser h2 {
@@ -756,6 +778,14 @@ menu {
     padding: 0.5em;
 }
 
+.accessibility article picture {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--OsloMet-gul);
+}
+
 .accessibility summary {
     display: flex;
     flex-direction: column;
@@ -768,8 +798,8 @@ menu {
 }
 
 .accessibility img {
-    height: 15em;
-    width: 30em;
+    height: 25vw;
+    width: 50vw;
 }
 
 @media screen and (max-width: 1100px){
