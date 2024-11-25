@@ -124,23 +124,6 @@ function openMoreInfo(ButtonId) {
     }
 }
 
-// let sportNumber = 1
-// function changeSport(arrow) {    
-//     var currentSport = document.getElementById("sport-"+sportNumber)
-//     sportNumber++
-//     var nextSport = document.getElementById('sport-'+sportNumber)
-//     var previousSport = currentSport
-    
-//     if (arrow === "rightArrow") {
-//         currentSport.style.left = '-100%'
-//         nextSport.style.left = '0%'
-//     } else if (arrow === "leftArrow") {
-//         currentSport.style.left = '100%'
-//         previousSport.style.left = '0%'
-//     }
-//     currentSport = nextSport
-// }
-
 let sportNumber = 1 // Tracks the current sport
 const totalSports = 5 // Total number of sports (update this as needed)
 
