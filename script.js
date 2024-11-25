@@ -64,6 +64,7 @@ let activeButton = null
 let activeMoreInfoButton = null
 let activeEvenMoreInfoButton = null
 
+//Function for displaying the general information of the study 
 function openInfo(ButtonId) {
     var InfoSections = document.querySelectorAll(".InfoSection")
     var InfoButtons = document.querySelectorAll(".InfoButton")
@@ -86,7 +87,7 @@ function openInfo(ButtonId) {
          activeButton = null
          currentButton.style.backgroundColor = "var(--OsloMet-gul)"
     } else {
-        currentInfo.style.display = "flex"
+        currentInfo.style.display = "flex" //displayed the current info
         activeButton = ButtonId //sets the current button as active
         currentButton.style.backgroundColor = "lightgrey"
         var InfoSections = document.querySelectorAll(".moreInfoSection")
@@ -96,7 +97,7 @@ function openInfo(ButtonId) {
     }
 }
 
-
+//Function opening the information displayed in the "Studiets oppbygging" article
 function openMoreInfo(ButtonId) {
     var InfoSections = document.querySelectorAll(".moreInfoSection")
     var InfoButtons = document.querySelectorAll(".moreInfoButton")
