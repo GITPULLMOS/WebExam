@@ -848,12 +848,12 @@ menu {
 footer{
     background-color: var(--OsloMet-gul);
     height: fit-content;
-    min-height:30em;
+    min-height:30em; /* footer adjusts its height based on content with an minimum width */
     position: relative;
     z-index: 0;
     margin-bottom: 0;
 }
-
+/* Serves to seperate the footer to an top and bottom section */
 .footertop{
     border-bottom: 1px solid black;
     display: flex;
@@ -863,10 +863,12 @@ footer{
 }
 
 .footeroverskrift{
+    /* Set the font styles for the footer heading */
     font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
     font-size: 2.5vw;
 }
 
+/* styling for buttons within the footer */
 .footerknapp{
     background-color: black;
     font-weight: bold;
@@ -937,6 +939,7 @@ a {
     text-decoration: inherit;
   }
 
+  /* Responsive styling for smaller screens */
   @media screen and (max-width: 650px){
     footer{
         height: 40em;
@@ -969,11 +972,13 @@ a {
         margin-top: -19rem;
     }
 }
-     @media screen and (max-width: 700px){
+
+/* Additionall styling for smoother scaling */
+@media screen and (max-width: 700px){
     .footerinfo div:nth-child(){
         margin-left: -3vw;
         flex-direction: column;
     }
 }
 
-  /* End of footer */
+  /* -------------- End of footer --------------------*/
