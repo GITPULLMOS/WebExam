@@ -570,7 +570,7 @@ menu {
     position: absolute;
 }
 
-#sport-2, #sport-3, #sport-4 {
+#sport-2, #sport-3, #sport-4, #sport-5 {
     display: none;
 }
 
@@ -603,6 +603,11 @@ menu {
     rotate: x 180deg;
     object-fit: contain;
     width: 40vw;
+}
+
+.sport-content a {
+    color: white;
+    text-decoration: underline;
 }
 
 /* End of activity page */
