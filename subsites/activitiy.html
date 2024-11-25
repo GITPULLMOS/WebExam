@@ -30,8 +30,11 @@
     </header>
     <main class="ActivityMain">
             <!-- General information about extreme-sports -->
-            <h1>Ekstremsport</h1>
-            <p>Ekstrem, på latin exstremus, kan oversettes med 
+            <div class="banner">
+                <h1>Ekstremsport</h1>
+            </div>
+            <p>
+                Ekstrem, på latin exstremus, kan oversettes med 
                 ytterst, og henspiller innenfor sport på at man beveger seg mot 
                 yttergrensen av hva man makter eller tåler. Utøvere av ekstremsport 
                 utsetter seg for livstruende situasjoner, men det er en kalkulert 
@@ -39,61 +42,65 @@
                 Å drive med ekstremsport krever konsentrasjonsevne og dyktighet, og mot 
                 hvor man er villig til å eksponere seg for objektive farer. En viktig 
                 drivkraft i ekstremsport er søken etter de grensesprengende og nervepirrende 
-                opplevelser hvor man får adrenalin-kick.</p>
+                opplevelser hvor man får adrenalin-kick.
+            </p>
                 <!--https://snl.no/ekstremsport-->
 
-            <div class="slideshow">
-                <img src="../Images/arrow.png" alt="left arrow" onclick="changeSport('leftArrow')">
-                <section>
-                    <!-- Each sport has its own article and id ranging from 1 to 4 -->
-                    <article id="sport-1">
-                        <h2>Vingedrakt flyvning</h2>
-                        <!-- Bilde fra https://www.flickr.com/photos/picturecorrect/49826750198/-->
-                        <p>Wingsuit-flyging (eller wingsuiting) er sporten der man hopper i fallskjerm med en spesialdesignet drakt med netting mellom armer og ben, kalt wingsuit. Denne drakten gir en større overflate som øker løft, noe som gjør det mulig å forlenge lufttiden ved å gli gjennom luften i stedet for å falle fritt.<a href="">link til noe vingedraktrelatert</a></p>
-                    </article>
-                    <article id="sport-2">
-                        <h2>Rafting</h2>
-                        <!-- Bilde fra https://flickr.com/photos/nataliedowne/2340993237-->
-                        <p>
-                            Rafting er en aktivitet som går ut på å navigere en flåte ned en elv. 
-                            Rafting utføres gjerne i stryk og elver hvor vannet renner raskt. 
-                            Det benyttes en åre til padling eller til å styre flåten med.
-                            Vanskeligheten på elva rangeres på en skala fra 1 til 6:
-                        </p>
-                        <ul>
-                            <li>Grad 1: Flatt vann.</li>
-                            <li>Grad 2: Vann i bevegelse. Få eller ingen hindringer.</li>
-                            <li>Grad 3: Sterk strøm med hindringer og stryk. Manøvrering er nødvendig.</li>
-                            <li>
-                                Grad 4: Sterk strøm med store stryk og vanskelige passasjer. 
-                                Manøvrering er vanskeleg, risiko for flip (båten går rundt).
-                            </li>
-                            <li>Grad 5: Ekstremt vanskelig og kun for spesielt interesserte.</li>
-                            <li>Grad 6: Umulig å rafte.</li>
-                        </ul>
-                        <!--https://no.wikipedia.org/wiki/Rafting-->
-                        <a target="_blank" href="https://www.visitnorway.no/aktiviteter-og-attraksjoner/utendorsaktiviteter/rafting/">Prøv rafting selv!</a>
-                    </article>
-                    <article id="sport-3">
-                        <h2>Friklatring</h2>
-                        <!-- Bilde fra https://www.flickr.com/photos/s_mestdagh/3360653671/-->
-                        <p>Friklatring defineres som «klatring på fjell uten hjelpemidler som bolter, store tau eller sikringsutstyr». Det regnes som en av de farligste sportene i verden, og ulykker i friklatring fører til rundt 30 dødsfall hvert år – et betydelig antall med tanke på hvor få som prøver seg på slike oppstigninger.</p>
-                        <a href="">link til noe klatrerelatert</a>
-                    </article>
-                    <article id="sport-4">
-                        <h2>Cave crawling</h2>
-                        <!-- Bilde fra https://www.flickr.com/photos/drainrat/14249101254/-->
-                        <p>
-                            Cave crawling, eller grottevandring, er en ekstremsport som involverer utforskning av mørke, trange og ofte farlige underjordiske passasjer.
-                            Kjent for sine unike fysiske og mentale utfordringer, kommer sporten også med betydelige risikoer, slik det ble tydeliggjort av den tragiske hendelsen i 2009, <a href="https://cavehaven.com/nutty-putty-cave-accident/" target="_blank">"The Nutty Putty Cave incident"</a> i Utah.
-                            Her ble 26 år gamle John Jones sittende fast i en utrolig trang tunnel, kjent som "The Birth Canal," mens han utforsket med venner.
-                            Til tross for en 24-timers redningsaksjon, kunne ikke Jones befris og døde til slutt som følge av komplikasjoner fra sin posisjon.
-                            Denne tragiske hendelsen, som førte til permanent stengning av Nutty Putty Cave, er en sterk påminnelse om de potensielle farene ved sporten og understreker viktigheten av forberedelse og forsiktighet i slike ekstreme miljøer.
-                        </p>
-                    </article>
-                </section>
-                <img src="../Images/arrow.png" alt="right arrow" onclick="changeSport('rightArrow')">
-            </div>
+        <div class="slideshow">
+            <img src="../Images/arrow.png" alt="left arrow" onclick="changeSport('leftArrow')">
+                <!-- Each sport has its own article and id ranging from 1 to 4 -->
+            <article id="sport-1">
+                <h2>Vingedrakt flyvning</h2>
+                <div class="sport-content">
+                    <p>
+                        Vingedrakt flyvning er en ekstrem sport der utøvere
+                        hopper fra høye steder iført spesiallagde drakter
+                        som lar dem gli gjennom luften.
+                        Det er en adrenalinfylt opplevelse som kombinerer fallskjermhopping
+                        med flyging, og krever presisjon og god fysisk form for å være trygg.
+                    </p>
+                    <img src="../Images/vingedrakt.jpg" alt="bilde av vingedrakt">
+                </div>
+            </article>
+            <article id="sport-2">
+                <h2>Rafting</h2>
+                <div class="sport-content">
+                    <p>
+                        Rafting innebærer å navigere elver med kraftige strømmer i oppblåsbare flåter.
+                        Sporten er perfekt for eventyrere som søker spenning og lagarbeid,
+                        og det krever både styrke og samarbeid for å manøvrere gjennom utfordrende farvann,
+                        fra rolige elver til voldsomme stryk.
+                    </p>
+                    <img src="../Images/rafting.jpg" alt="bilde av rafting">
+                </div>
+            </article>
+            <article id="sport-3">
+                <h2>Friklatring</h2>
+                <div class="sport-content">
+                    <p>
+                        Friklatring er en utfordrende sport hvor klatrere bestiger
+                        fjell eller klippevegger uten tau eller annen hjelp,
+                        og stoler på egen teknikk og styrke.
+                        Det er en mental og fysisk utfordring som utvikler smidighet og problemløsning,
+                        samtidig som det gir utøverne en følelse av prestasjon og frihet.
+                    </p>
+                    <img src="../Images/friklatring2.jpg" alt="bilde av klatring">
+                </div>
+            </article>
+            <article id="sport-4">
+                <h2>Cave crawling</h2>
+                <div class="sport-content">
+                    <p>
+                        Cave crawling, eller grotteklatring, innebærer å utforske underjordiske grotter og trange passasjer.
+                        En av de mest kjente ulykkene innen sporten var Nutty Putty Cave-incidenten i 2009,
+                        hvor John Edward Jones satt fast i en smal passasje og tragisk mistet livet etter
+                        flere timers redningsforsøk. Sikkerhet er avgjørende.
+                    </p>
+                    <img src="../Images/cavecrawling.jpg" alt="bilde av grotteklatring">
+                </div>
+            </article>
+            <img src="../Images/arrow.png" alt="right arrow" onclick="changeSport('rightArrow')">
+        </div>
     </main>
     <footer>
         <div class="footertop">

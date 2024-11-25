@@ -357,7 +357,7 @@ menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 80em;
+    width: 80vw;
     height: 25em;
     padding: 0;
     margin: 0 auto;
@@ -480,7 +480,7 @@ menu {
 
 .ActivityMain {
     font-family: Arial, sans-serif;
-    background-color: rgb(244, 237, 225);
+    background-color: rgb(168, 202, 232);
     line-height: 1.6;
     margin: 0;
     overflow: hidden;
@@ -488,115 +488,122 @@ menu {
     height: 100%;
 }
 
-.ActivityMain h1 {
+.banner {
+    height: 45vh;
     color: lightgray;
-    /* background-image: url("../Images/banner.jpg"); */
-    /* Bilde fra https://vi.wikivoyage.org/wiki/Kuwait */
+    background-image: url("Images/bannerImgSport.png");
+    background-repeat: no-repeat;
     background-size: cover;
-    font-size: 2.5em;
-    margin: 0;
-    padding: 1em 0 1em 0;
-}
-
-.ActivityMain .slideshow section {
-    overflow: hidden;
     display: flex;
-    flex-direction: row;
-    height: 90vh;
-    width: 80%;
     justify-content: center;
     align-items: center;
-
-    border: 2px solid red;
 }
 
-.slideshow {
+@media screen and (max-width: 850px) {
+    .banner {
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .banner {
+        height: 20vh;
+    }
+}
+
+.ActivityMain h1 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 1rem;
+    font-size: 7vw;
+    padding: 0 1em 0 1em;
+    font-weight: bold;
+}
+
+.ActivityMain p {
+    padding: 0 2em 0 2em;
+}
+
+.slideshow { 
+    height: 40rem;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    background-image: url(Images/backgroundSportImg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10%;
+    position: relative;
+}
+
+@media screen and (max-width: 1030px) {
+    .slideshow {
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .slideshow {
+        height: 20rem;
+    }
 }
 
 .slideshow img {
-    flex: 1;
-    position: relative;
     z-index: 6;
+    filter:invert(1);
+    width: 15vw;
 }
 
 .slideshow img:first-of-type {
     transform: rotate(180deg);
 }
 
-
-.ActivityMain article {
-    height: 20em;
-    width: 50%;
-    border-style: solid;
-    position: absolute;
-    transition: transform 0.5s ease;
-    background-repeat: no-repeat;
-
+.slideshow article {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-
-#sport-1 {
-    background-image: url(Images/vingedrakt.jpg);
-}
-
-#sport-2 {
-    background-image: url(Images/rafting.jpg);
-}
-
-#sport-3 {
-    background-image: url(Images/friklatring2.jpg);
-}
-
-#sport-4 {
-    background-image: url(Images/cavecrawling.jpg);
-}
-
-.ActivityMain article h2 {
-    font-size: 1.8em;
-    color: #706d6d;
-}
-
-.ActivityMain article p, .ActivityMain article ul {
-    border-style: solid;
-    font-weight: bold;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.689);
+    color: white;
+    transition: transform 0.7s ease;
+    background-color: rgba(0, 0, 0, 0.6); 
+    height: 100%;
+    position: absolute;
 }
 
 #sport-2, #sport-3, #sport-4 {
     display: none;
 }
 
-.ActivityMain p {
-    width: 45em;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 1em;
-    color: #333;
+.sport-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-.ActivityMain img {
-    max-height: 100%;
-    max-width: 100%;
-    border-radius: 8px;
-    margin-bottom: 1em;
+.sport-content p {
+    width: 50%;
+    font-size: 2vw;
 }
 
-.ActivityMain ul {
-    color: #333;
+@media screen and (max-width: 480px) {
+    .sport-content {
+        flex-direction: column-reverse;
+    }
+
+    .sport-content p {
+        width: 100%;
+        font-size: 3vw;
+    }
 }
 
-.ActivityMain a {
-    color: #333;
-    border-bottom: 2px solid #333;
+.sport-content img {
+    filter: invert(0);
+    rotate: x 180deg;
+    object-fit: contain;
+    width: 40vw;
 }
+
 /* End of activity page */
 
 /* Start of Github page */

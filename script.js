@@ -157,18 +157,18 @@ function changeSport(arrow) {
   const nextSport = document.getElementById("sport-" + sportNumber)
 
   // Prepare the next sport for sliding in
-  nextSport.style.display = "block" // Ensure it's visible before animation
-  nextSport.style.transform = arrow === "rightArrow" ? "translateX(200%)" : "translateX(-200%)" // Position off-screen based on direction
+  nextSport.style.display = "flex" // Ensure it's visible before animation
+  nextSport.style.transform = arrow === "rightArrow" ? "translateX(1000%)" : "translateX(-1000%)" // Position off-screen based on direction
 
   // Trigger sliding animation
   setTimeout(() => {
-    currentSport.style.transform = arrow === "rightArrow" ? "translateX(-200%)" : "translateX(200%)" // Position off-screen based on direction
+    currentSport.style.transform = arrow === "rightArrow" ? "translateX(-1000%)" : "translateX(1000%)" // Position off-screen based on direction
     nextSport.style.transform = "translateX(0)" // Slide next sport into view
 
     // Wait for animation to complete before hiding the current sport
     setTimeout(() => {
       currentSport.style.display = "none" // Hide the current sport after sliding out
-    }, 500) // Match this to the CSS transition duration (0.5s)
+    }, 700) // Match this to the CSS transition duration (0.5s)
   },0)
 }
 
