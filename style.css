@@ -333,9 +333,9 @@ menu {
     padding: 0;
 }
 
-/* -----------------End of "Studiets oppbygging" --------------------*/
+/* ----------------- End of "Studiets oppbygging" --------------------*/
 
-/* -----------------Style for "Andre interesser"-------------------- */
+/* ----------------- Style for "Andre interesser" -------------------- */
 .andreInteresser h2 {
     font-weight: bold;
 }
@@ -383,7 +383,7 @@ menu {
     transform: scale(1.1);
 }
 
-/* ---------------Scaling style for "Andre Interesser------------------ */
+/* ------------------------- Scaling style for "Andre Interesser ------------------------ */
 @media screen and (max-width: 600px) {
     .container ul {
         width: 50vw;
@@ -404,9 +404,9 @@ menu {
     }
 }
 
-/* End of "Andre interesser" */
+/* -------------------------- End of "Andre interesser" ---------------------------------- */
 
-/* Styling for "Teknologi og design" */
+/* ----------------------- Styling for "Teknologi og design" ----------------------------- */
 
 .teknologiogdesign{
     background-color: var(--OsloMet-gul);
@@ -448,6 +448,7 @@ menu {
     width: 40vw;
 }
 
+/* ---------------------- Scaling style for "Teknologi og design" ---------------------- */
 @media screen and (max-width: 750px) {
     .teknologiogdesign {
         height: 100%;
@@ -475,7 +476,9 @@ menu {
     }
 }
 
-/* End of "Teknologi og design" */
+/* ------------------------ End of "Teknologi og design" ---------------------- */
+
+/* ----------------------- Start of "Studenthistorier" ---------------------- */
 .studenthistorier {
     background-color: var(--OsloMet-gul);
 
@@ -519,6 +522,7 @@ menu {
     transition: left 300ms;
 }
 
+/* ------------------- Scaling style for "Studenthistorier" ----------------------- */
 @media  screen and (max-width: 600px) {
     .studenthistorier {
         width: 15em;
@@ -530,9 +534,9 @@ menu {
     }
 }
 
-/* End of the main content */
+/* ---------------------- End of the main content ----------------------------- */
 
-/* Start of activity-page */
+/* -------------------- Start of activity-page ------------------------------- */
 
 .ActivityMain {
     font-family: Arial, sans-serif;
@@ -555,6 +559,7 @@ menu {
     align-items: center;
 }
 
+/* ------------- General scaling for "Activity" page ---------------- */
 @media screen and (max-width: 850px) {
     .banner {
         height: 30vh;
@@ -580,6 +585,7 @@ menu {
     padding: 0 2em 0 2em;
 }
 
+/* ----------------------- Styling for slideshow ------------------------- */
 .slideshow { 
     height: 40rem;
     display: flex;
@@ -592,6 +598,7 @@ menu {
     position: relative;
 }
 
+/* Scaling for slideshow for smoother scaling */
 @media screen and (max-width: 1030px) {
     .slideshow {
         height: 30rem;
@@ -610,6 +617,7 @@ menu {
     width: 15vw;
 }
 
+/* rotates the first arrow to the left */
 .slideshow img:first-of-type {
     transform: rotate(180deg);
 }
@@ -625,6 +633,7 @@ menu {
     position: absolute;
 }
 
+/* initially displayed as none until activated by script */
 #sport-2, #sport-3, #sport-4, #sport-5 {
     display: none;
 }
@@ -642,7 +651,9 @@ menu {
     font-size: 2vw;
 }
 
+/* ----------------------- Sport content scaling ------------------------------ */
 @media screen and (max-width: 480px) {
+    /* puts the text under the picture for better placement */
     .sport-content {
         flex-direction: column-reverse;
     }
@@ -654,20 +665,21 @@ menu {
 }
 
 .sport-content img {
-    filter: invert(0);
+    filter: invert(0); 
     rotate: x 180deg;
     object-fit: contain;
     width: 40vw;
 }
 
+/* Highlight where the links are */
 .sport-content a {
     color: white;
     text-decoration: underline;
 }
 
-/* End of activity page */
+/* -------------- End of activity page ------------------ */
 
-/* Start of Github page */
+/* ---------------- Start of Github page ------------------- */
 
 .GithubBody {
     background-color: rgb(142, 140, 140);
@@ -755,6 +767,7 @@ menu {
     padding: 1vw;
 }
 
+/* ---------------- Scaling for the "Github" page -------------------------- */
 @media screen and (max-width: 750px) {
     .historikkbilder{
         flex-direction: column;
@@ -790,9 +803,9 @@ menu {
     }
 }
 
-/* End of Github page */
+/* -------------------------- End of Github page --------------------------- */
 
-/* Start of Accessibility page */
+/* ------------------------- Start of Accessibility page ---------------------------*/
 
 .accessibility {
     margin-top: 1em;
@@ -842,9 +855,9 @@ menu {
 }
 
 
-/* End of Accessibility page */
+/* ------------------------- End of Accessibility page ---------------------- */
 
-/* Start of the footer */
+/* --------------------------- Start of the footer ------------------------------- */
 footer{
     background-color: var(--OsloMet-gul);
     height: fit-content;
