@@ -186,20 +186,24 @@ td p:first-child {
 
 /* End of "Bachelor-program" table */
 
-/* Start of info section */
+/* -------------------- Start of info section ----------------------*/
+
+/* Presenting section information in a centered, column layout */
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5rem;
+    padding: 5rem; /* spacing aorund the section */
 }
 
+/* Lighter heading appereance withing the section */
 section h3 {
     margin-top: 6vh;
     font-weight: lighter;
     width: 50vw;
 }
 
+/* table styling for center aligment and visual balance */
 section table {
     width: 100%;
     max-width: 50vw;
@@ -211,15 +215,16 @@ section table {
     text-align: center;
 }
 
+/* general purpose wrapper class for central alignment of child elements */
 .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
+/* styling for interactive buttons in the infosection */
 .InfoButton {
-    background-color: var(--OsloMet-gul); /* Nice yellow */
+    background-color: var(--OsloMet-gul); 
     color: #333; /* Dark text for contrast */
     font-weight: normal;
     border: 0.15em solid #e0c400;
@@ -235,18 +240,20 @@ section table {
     justify-content: center;
 }
 
+/* Responsive design for smaller screens */
 @media screen and (max-width: 950px) {
     .wrapper {
-        flex-direction: column;
+        flex-direction: column; /* stack elements vertically */
     }
 
     .InfoButton {
-        height: 0.1em;
+        height: 0.1em; /* adjust button height for mobile */
     }
 }
 
+/* Additional section hidden by default until activated by script */
 .InfoSection {
-    display: none;
+    display: none; /* hidden initially */
     border: 0.15em solid var(--OsloMet-gul);
     border-radius: 1em;
     flex-direction: column;
@@ -257,10 +264,12 @@ section table {
     background-color: rgb(234, 234, 234);
 }
 
+/* Padding for paragraphs withing info section */
 .InfoSection p {
     padding: 1vw;
 }
 
+/* Strcture for unordered lists for clear layout */
 .InfoSection ul {
     list-style-type: disc;
     display: flex;
@@ -269,6 +278,7 @@ section table {
     justify-content: flex-start;
 }
 
+/* Section for more info, initially  */
 .moreInfoSection {
     display: none;
     flex-direction: column;
