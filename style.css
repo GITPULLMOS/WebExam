@@ -15,18 +15,16 @@ List of contents:
 */
 
 
-/* Defined global variables for color for consistent styling */
+
 :root {
     --OsloMet-gul: rgb(255,213,0);
 }
 
-/* Applied bix-sizing and default cursor for all elements */
 * {
     box-sizing: border-box;
     cursor: default;
 }
 
-/* General body styles */
 body {
     margin: 0;
     font-family: Moderat, Avenir, Helvetica, Arial, sans-serif;
@@ -34,20 +32,18 @@ body {
     background-color: white;
 }
 
-/* Hides the scroll bar */
 ::-webkit-scrollbar {
     width: 0;
 }
 
-/* Anchor tag styled for pointer interactions */
 a {
     cursor: pointer;
 }
 
-/* --------------- Start of the main navigation bar layout and design --------------- */
+/* Start of the Navigation bar */
 
 nav {
-    background-color: var(--OsloMet-gul); /* Matches OsloMet branding */
+    background-color: var(--OsloMet-gul);
     width: 100%;
     max-width: 100%;
     height: 6em;
@@ -56,19 +52,17 @@ nav {
     justify-content: space-around;
     border-bottom-style: solid;
     position: relative;
-    z-index: 100; /* Ensures that the nav stays above other elements  */
+    z-index: 100;
 }
 
-/* Adjustments for the first and fifth links in the nav */
 nav a:first-child {
     margin-left: -5vw;
 }
 
 nav a:nth-child(5) {
-    display: none; /* hidden by default for responsive menu */
+    display: none;
 }
 
-/* Navigation links styled as bold for emphasis */
 nav p {
     display: flex;
     flex-direction: row;
@@ -76,11 +70,10 @@ nav p {
     cursor: pointer;
 }
 
-/* Dropdown menu for mobile navigation */
 #bottomNav {
     width: 100vw;
     background-color: var(--OsloMet-gul);
-    display: none; /* hidden until changed in script  */
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -93,7 +86,6 @@ nav p {
     display: block;
 }
 
-/* Darkened overlay for mobile menu */
 #Cover {
     display: none;
     width: 100vw;
@@ -105,16 +97,15 @@ nav p {
     z-index: 1;
 }
 
-/* Responsive adjustments for nav on smaller screens */
 @media screen and (max-width: 500px) {
     nav a:nth-child(2),
     nav a:nth-child(3),
     nav a:nth-child(4) {
-         display: none; /* Hides non-essential links */
+        display: none;
     }
 
     nav a:nth-child(5) {
-        display: block; /* Display mobile menu link  */
+        display: block;
     }
 
     #bottomNav {
@@ -123,19 +114,18 @@ nav p {
 
 }
 
-/* --------------- End of Navigation Bar --------------- */
+/* End of Navigation Bar */
 
-/* --------------- Start of the main content ---------------  */
-
-/* Main container styling */
+/* Start of the main content */
 main {
-    margin-top: 15vh 5vw 0 5vw; /* Top margin to acount for nav height */
+    margin-top: 15vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-/* Page headings styling */
 main h1 {
     font-size: 3em;
 }
@@ -146,9 +136,8 @@ main h2 {
     text-align: center;
 }
 
-/* ----------------- Start of "Bachelor-program" table ------------------*/
+/* Start of "Bachelor-program" table */
 
-/* Align space table rows */
 .Bachelor-program tr {
     display: flex;
     justify-content: center;
@@ -156,37 +145,37 @@ main h2 {
 }
 
 .Bachelor-program tr:last-child {
-    padding-top: 2em; /* extra space for last row */
+    padding-top: 2em;
 }
 
-/* cell styling for table content */
 .Bachelor-program td {
-    white-space: nowrap; 
+    white-space: nowrap;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: start;
-    border-left-style: solid; /* Seperation between columns */
+    border-left-style: solid;
     border-width: 0.1em;
     padding-left: 3vw;
 }
 
-/* Highlights the first text element in each cell */
 td p:first-child {
     font-weight: bold;
 }
 
-/* Responsive styling for smaller screens */
 @media screen and (max-width: 700px) {
 
-    main h1, main h2 {
-         font-size: 1.5em;  /*reduce heading sizes */
+    main h1 {
+        font-size: 1.5em;
     }
 
+    main h2 {
+        font-size: 1.5em;
+    }
 
     .Bachelor-program tr {
-        flex-direction: column; /* stack rows */
-        gap: 3vw; /* Reduce spacing */
+        flex-direction: column;
+        gap: 3vw;
     }
 
     .Bachelor-program td {
@@ -195,7 +184,7 @@ td p:first-child {
     }
 }
 
-/* ------------------- End of "Bachelor-program" table ---------------------*/
+/* End of "Bachelor-program" table */
 
 /* -------------------- Start of info section ----------------------*/
 
@@ -351,37 +340,38 @@ menu {
     font-weight: bold;
 }
 
-.andreInteresser ul {
-    padding: 0;
-}
-
-.andreInteresser li:first-of-type {
-    border-top: 1px solid #333;
-}
-
-.andreInteresser li {
-    border-bottom: 1px solid #333;
-    display: flex;
-    flex-direction: row;
-}
-
 .container {
     padding-top: 0;
 }
 
+.container ul {
+    padding: 0;
+}
+
+.container li:first-of-type {
+    border-top: 1px solid #333;
+}
+
+.container li {
+    border-bottom: 1px solid #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 .container section:nth-child(2n+1) {
     display: flex;
     align-items: start;
     padding: 0 0 1em 0;
     margin-right: 5em;
     white-space: nowrap;
+    text-align: left;
 }
 
 .container section:nth-child(2n+2) {
     display: flex;
     align-items: start;
     padding: 0;
-    margin-top: 2em;
 }
 
 .container img {
@@ -394,8 +384,12 @@ menu {
 }
 
 @media screen and (max-width: 600px) {
+    .container ul {
+        width: 50vw;
+    }
+
     .container p {
-        font-size: smaller;
+        display: none;
     }
 
     .container img {
@@ -404,10 +398,8 @@ menu {
 
     .container section:nth-child(2n+1) {
         margin-right: 1em;
-    }
-
-    .container section:nth-child(2n+2) {
-        margin-top: 2.5em;
+        padding: 0;
+        white-space: inherit;
     }
 }
 
@@ -946,7 +938,7 @@ a {
 
   @media screen and (max-width: 650px){
     footer{
-        height: 41.5em;
+        height: 40em;
     }
     .footeroverskrift{
         font-size: 1.2rem;
@@ -957,7 +949,7 @@ a {
         flex-direction: column;
     }
     .liste{
-        margin-left: -0.7vw;
+        margin-left: -0.5vw;
     }
     .footerknapp{
         font-size: 1rem;
